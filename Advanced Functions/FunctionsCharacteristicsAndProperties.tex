@@ -1,0 +1,262 @@
+\chapter{Functions Characteristics and Properties}
+	\section{Functions}
+		\subsection{Relations}
+			A binary relation is a set of ordered $(x, y)$ pairs.
+		\subsection{Domain and Range of a Relation}
+			The domain of the relation is the set of all $x$ values such that $x \in \text{the set of } (x, y)$ pairs.
+
+			The range of the relation is the set of all $y$ values such that $y \in \text{the set of } (x, y)$ pairs.
+		\subsection{Functions}
+			A function from a set $X$ (the domain) to a set $Y$ (the range) is a rule that assigns to each element $x \in X$ exactly one element $y \in Y$ ($f : X \rightarrow Y$).
+		\subsection{Graph}
+			The graph of a function $f$ is the graph of the $(x, y)$ pairs, where $y = f(x)$.
+		\subsection{The Vertical Line Test}
+			All functions are relations, but not all relations are functions.
+
+			A relation is a function is there exist no two distinct $y$ values with the same $x$ value.
+		\subsection{Domain and Range}
+			The domain $D$ of a function $f$ is the set \{$x\ |\ x \in \mathbb{R} \wedge y=f(x)$ is defined\}.
+
+			The range $R$ of a function $f$ is the set \{$y\ |\ y \in \mathbb{R} \wedge y=f(x)$ is defined\}.
+		\subsection{Restrictions}
+			Division by 0 kills kittens. So for:
+			\[\frac{a}{b} \qquad b \neq 0\]
+
+			Square root is not defined for negative numbers. So for:
+			\[\sqrt{a} \qquad a \geq 0\]
+
+			A square is not negative. So for:
+			\[x^2 \qquad x^2 \geq 0\]
+
+			A square root is not negative. So for:
+			\[\sqrt{x} \qquad x \geq 0\]
+	\section{Exploring Absolute Value}
+		\label{sec:abs}
+		\subsection{Absolute Value}
+			The absolute value $|x|$ of a real number $x$ is the distance between $x$ and 0.
+		\subsection{Definition of Absolute Value}
+			\begin{equation*}
+				|x| = 
+				\begin{cases}
+					x, & \text{if } x \geq 0\\
+					-x, & \text{if } x < 0
+				\end{cases}
+			\end{equation*}
+		\subsection{Properties of Absolute Value}
+			The absolute value has the following properties:
+			\begin{itemize}
+				\item $|a| = |-a|$
+				\item $|a| = 0 \iff a = 0$
+				\item $|ab| = |a||b|$
+				\item $|\frac{a}{b}| = \frac{|a|}{|b|}$
+				\item $|a + b| \leq |a| + |b|$ (triangle inequality)
+			\end{itemize}
+		\subsection{Distance Between Two Numbers}
+			If $A(a)$ and $B(b)$ are two points on the number line, corresponding to the two numbers $a$ and $b$ respectively, the distance between the points can be expressed using the absolute value as:
+			\[d(A, B) = |b - a|\]
+		\subsection{Equations}
+			Consider $E(x)$, an algebraic expression containing the variable $x$. The equation
+			\[|E(x)| = a \qquad a \geq 0\]
+			can be solved by isolating $x$ from the equation
+			\[E(x) = \pm a\]
+		\subsection{Absolute Value Function}
+			The absolute value function is defined by:
+			\[y = f(x) = |x|\]
+		\subsection{Inequalities}
+			The comparison operators are used to create inequalities.
+
+			The comparison operators are:
+			\[< \qquad \leq \qquad = \qquad \neq \qquad > \qquad \geq\]
+		\subsection{Interval Notation}
+			The following notations are equivalent:
+			\begin{itemize}
+				\item $a < x \leq b$ (inequality notation)
+				\item $x \in [a, b)$ (interval notation)
+				\item $\{x \in \mathbb{R}\ |\ a < x \leq b\}$ (set notation)
+			\end{itemize}
+		\subsection{Transformations}
+			\label{subsec:transform}
+			Given a parent function $f(x)$, we can create new functions using transformations:
+			\[g(x) = af(b(x - c)) + d\]
+			\subsubsection{Transformations involving $a$}
+				If $|a| > 1$, there is a vertical stretch by a factor of $|a|$.
+
+				If $|a| < 1$, there is a vertical compression by a factor of $|a|$.
+
+				If $a < 0$, there is a reflection in the $x$ axis.
+			\subsubsection{Transformations involving $b$}
+				If $|b| > 1$, there is a horizontal compression by a factor of $\frac{1}{|b|}$.
+
+				If $|b| < 1$, there is a horizontal stretch by a factor of $\frac{1}{|b|}$.
+
+				If $b < 0$, there is a reflection in the $y$ axis.
+			\subsubsection{Transformations involving $c$}
+				If $c > 0$, there is a horizontal translation $c$ units to the right.
+
+				If $c < 0$, there is a horizontal translation $c$ units to the left.
+			\subsubsection{Transformations involving $d$}
+				If $d > 0$, there is a vertical translation $d$ units up.
+
+				If $d < 0$, there is a vertical translation $d$ units down.
+	\section{Properties of Graphs of Functions}
+		\subsection{Domain and Range}
+			The domain of a function is the set of all $x$ values where the function is defined.
+
+			The range of a function is the set of all $y$ values such that $y = f(x)$.
+		\subsection{x-intercepts and y-intercepts}
+			The x-intercepts are the $x_{int}$ values such that $f(x_{int}) = 0$
+
+			The y-intercept is the $y_{int}$ value such that $y_{int} = f(0)$ (if it exists).
+		\subsection{Intervals of Increase or Decrease (Turning Points)}
+			The function increases if the slope of the tangent line is positive.
+
+			The function decreases if the slope of the tangent line is negative.
+
+			A turning point is a point where the function changes from increasing to decreasing or vice versa.
+		\subsection{Maximum and Minimum Points}
+			The point $(a, f(a))$ is a maximum point is $f(a) \geq f(x)$ in the neighbourhood of $x=a$.
+
+			The point $(a, f(a))$ is a minimum point is $f(a) \leq f(x)$ in the neighbourhood of $x=a$.
+		\subsection{Odd and Even Functions}
+			The function $f$ is even if $f(-x) = f(x)$ (the graph is symmetric about the y-axis).
+
+			The function $f$ is odd if $f(-x) = -f(x)$ (the graph is symmetric about the origin).
+		\subsection{Continuous and Discontinuous Functions}
+			\label{subsec:continuous}
+			A continuous function has no holes, finite gaps (jumps), or infinite breaks.
+		\subsection{Vertical and Horizontal Asymptotes}
+			The vertical line $x=a$ is a vertical asymptote if the $y$ values approach $\pm\infty$ in the neighbourhood of $x=a$.
+
+			The horizontal line $y=a$ is a horizontal asymptote if the values of $y$ approach $a$ as $x$ approaches $\infty$.
+		\subsection{Horizontal and Vertical Tangent Lines}
+			When the tangent line is horizontal, the slope is 0.
+
+			When the tangent line is vertical, the slope is unbounded (approaches $\infty$).
+		\subsection{End Behaviour}
+			The end behaviour is related to the $y$ values as $x$ becomes unbounded.
+		\subsection{Concavity Upward and Downward}
+			The graph of a function is concave upwards if the graph lies above all its tangents.
+
+			The graph of a function is concave downwards if the graph lies below all its tangents.
+		\subsection{Corner, Cusp, and Infinite Slope Points}
+			A corner point is a point with 2 distinct tangent lines.
+
+			A cusp point is a turning point with a vertical tangent line.
+
+			An infinite slope point is a non-turning point with a vertical tangent line.
+		\subsection{Periodic Functions}
+			A function is periodic if there exists $T$ such that $f(x + T) = f(x)$.
+		\subsection{Axis of Symmetry and Axis}
+			The graph of a function has an axis of symmetry $x=a$ if the graph is symmetric about the vertical line $x=a$.
+	\section{Sketching Graphs of Functions}
+		\subsection{Parent Functions}
+			The parent functions are functions in their simplest form. We use parent functions and transformations to create more complex functions.
+
+			For example:
+			\[g(x) = -2\frac{1}{(x-1)^2}+3\]
+			is a transformation of the parent function:
+			\[f(x) = \frac{1}{x^2}\]
+
+			To graph a parent function, use key points.
+		\subsection{Transformations}
+			Given a parent function $f$, we can create new functions using transformations.
+
+			See \ref{subsec:transform}.
+		\subsection{Mapping Formulas}
+			By comparing the original (parent or old function):
+			\[y_{old} = f(x_{old})\]
+			and the image (new) function:
+			\[y_{new} = ay_{old} + d\]
+			or:
+			\begin{equation*}
+				\begin{cases}
+					y_{new} &=\ ay_{old}+d\\
+					x_{new} &=\ \frac{x_{old}}{b}+c
+				\end{cases}
+			\end{equation*}
+			A point $(x_{old}, y_{old})$ on the original (parent or old) function corresponds to the point $(x_{new}, y_{new})$ on the image (new) function.
+		\subsection{Domain and Range}
+			After transformations, the domain and the range may be changed. Use the mapping formulas to find the new ones.
+	\section{Inverse Relations}
+		\subsection{Inverse Relation}
+			For any relation there is an inverse relation obtained by interchanging (switching) $x$ and $y$ for all ordered pairs in the original relation.
+		\subsection{Symmetry}
+			The graph of a relation and the graph of its inverse relation are symmetrical about the line $y=x$.
+		\subsection{Corresponding Key Points}
+			A point $P(x,y)$ on the relation $r$ corresponds to the point $P'(y,x)$ on the inverse relation $r^{-1}$
+
+			The points $P$ and $P'$ are symmetrical about the line $y=x$.
+		\subsection{Domain and Range}
+			The domain of the inverse relation $r^{-1}$ is the same as the range of the relation $r$.
+			\\
+			Formally:
+			\[D_{r^{-1}} = R_r\]
+
+			The range of the inverse relation $r^{-1}$ is the same as the range of the domain $r$.
+			\\
+			Formally:
+			\[R_{r^{-1}} = D_r\]
+		\subsection{Inverse Relation of a Function}
+			Any function is a relation.
+			
+			So any function $f$ has an inverse relation $f^{-1}$.
+
+			The inverse relation of a function may or may not be a function.
+		\subsection{Algebraic Method}
+			To find the inverse of a function:
+			\begin{enumerate}
+				\item Write the original function in the form $y=f(x)$
+				\item Swap the variables $x$ and $y$
+				\item Solve the last expression for $y$
+				\item Replace $y$ with $f^{-1}(x)$
+			\end{enumerate}
+		\subsection{One-to-One Functions}
+			If the inverse relation of $f$ is also a function, then $f$ is a one-to-one function.
+			\\
+			Formally:
+			\[y = f(x) \iff x = f^{-1}(y)\]
+		\subsection{Horizontal Line Test}
+			One-to-one functions pass the horizontal line test:
+
+			Any horizontal line intersects the graph at no more than one point.
+		\subsection{Restricted Domains}
+			By restricting the domain of a function (which is not one-to-one), we may obtain a one-to-one function.
+	\section{Piecewise Functions}
+		\subsection{Piecewise-Defined Functions}
+			A piecewise-defined function requires more than one formula to define the function. Each formula is defined on a different interval.
+
+			The domain of a piecewise function is the union ($\cup$) of all intervals used to define the function.
+			\subsubsection{Heaviside Function}
+				The Heaviside function is defined by:
+				\begin{equation*}
+					H(x)=
+					\begin{cases}
+						1, &\text{if } x \geq 0\\
+						0, &\text{if } x < 0
+					\end{cases}
+				\end{equation*}
+		\subsection{Continuity}
+			A continuous function can be drawn without lifting your pencil from the paper. See \ref{subsec:continuous}.
+		\subsection{Absolute Value of a Function}
+			See \ref{sec:abs}.
+	\section{Exploring Operations with Functions}
+		\subsection{Arithmetic Combinations}
+			\[(f+g)(x)=f(x)+g(x)\]
+			\[(f-g)(x)=f(x)-g(x)\]
+			\[(fg)(x)=f(x)g(x)\]
+			\[\left(\frac{f}{g}\right)(x)=\frac{f(x)}{g(x)} \quad | \quad g(x) \neq 0\]
+		\subsection{Domain}
+			The domain of $f+g$, $f-g$, and $fg$ is the intersection of the domain of $f$ and the domain of $g$.
+
+			\[D_{f+g} = D_f \cap D_g\]
+			\[D_{f-g} = D_f \cap D_g\]
+			\[D_{fg} = D_f \cap D_g\]
+			\[D_{f \div g} = D_f \cap D_g \quad | \quad g(x) \neq 0\]
+	\section{Composition of Functions}
+		\subsection{Composition of Functions}
+			\[(f \circ g)(x) = f(g(x))\]
+		\subsection{Domain and Range}
+			The domain of $f \circ g$ is a subset of the domain of $g$:
+			\[D_{f \circ g} = \{x \in D_g\ |\ g(x) \in D_f\}\]
+
+			The range of $f \circ g$ is a subset of the domain of $f$.

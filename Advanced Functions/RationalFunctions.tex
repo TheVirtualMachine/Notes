@@ -1,0 +1,279 @@
+\chapter{Rational Functions}
+	\section{Graphs of Reciprocal Functions}
+		\subsection{General Rules}
+			Consider a function $y=f(x)$ and its reciprocal $g(x) = \frac{1}{f(x)}$. Here are some general rules:
+			\begin{itemize}
+				\item If $f(x)$ has a zero at $x=a$, then $g(x)$ has a vertical asymptote $x=a$
+				\item If $f(x)$ has a vertical asymptote $x=a$ ($y \to \pm\infty \text{ as } x \to a$), then $g(x)$ has a zero at $x=a$
+				\item If $f(x)$ is unbounded as $x$ becomes unbounded ($y \to \pm\infty \text{ as } x \to \pm\infty$) then $g(x)$ has the horizontal asymptote $y=0$
+				\item If $f(x)$ has a horizontal asymptote $y=a$ ($y \to a \text{ as } x \to \pm\infty$), then $g(x)$ has a horizontal asymptote $y=\frac{1}{a}$
+				\item If $f(x)$ is increasing/decreasing over an interval, then $g(x)$ is decreasing/increasing over the same interval
+				\item If $f(x)$ has a local minimum/maximum at $(a, f(a))$, then $g(x)$ has a local maximum/minimum at $(a, g(a))$
+				\item If $f(x)$ is even/odd/neither, then so is $g(x)$
+			\end{itemize}
+	\section{Exploring Quotients of Polynomial Functions (Rational Functions)}
+		\subsection{Rational Functions}
+			A rational function is a function of the form:
+			\[f(x)=\frac{P(x)}{Q(x)}\]
+			where $P(x)$ and $Q(x)$ are polynomial functions.
+		\subsection{Domain}
+			The domain of a rational function is determined by the restriction $Q(x) \neq 0$.
+		\subsection{y-intercept}
+			The y-intercept for a rational function $f(x)$ is the point $(0, f(0))$ if 0 is in the domain of $f$.
+		\subsection{Holes}
+			The $x$ values where $Q(x) = 0$ do not belong to the domain of the function and must not appear on the graph of a rational function. These values might create holes in the graph of the rational function.
+		\newpage
+		\subsection{Vertical Asymptotes}
+			If $x=a$ is a vertical asymptote, then the value of the function becomes unbounded as $x \to a$ from the left or right.
+			\\
+			In short, $x=a$ is a vertical asymptote if:
+			\[\lim_{x \to a-} f(x) = f(a - h) = \pm\infty\]
+			or
+			\[\lim_{x \to a+} f(x) = f(a + h) = \pm\infty\]
+			where $h > 0 \wedge h \text{ is very small}$
+
+			If $x=a$ is a vertical asymptote for a rational function $f(x) = \frac{P(x)}{Q(x)}$, then $a$ is a zero of $Q(x)$ and not a zero of $P(x)$.
+		\subsection{Behaviour Near the Vertical Asymptote}
+			The value of the rational function is unbounded as $x \to a$ from the left and the right. To find the unbounded value of the rational function, use substitution, $x = a \pm h$ and the following types of limits:
+			\[\frac{1}{h}=\infty \qquad \frac{1}{-h}=-\infty \qquad \frac{1}{h^2}=\infty \qquad \frac{1}{(-h)^2}=\infty \qquad \frac{1}{(-h)^3}=-\infty\]
+			and so on.
+		\subsection{Horizontal Asymptotes}
+			If $y=c$ is a horizontal asymptote, then $f(x) \to c \text{ as } x \to \pm\infty$.
+			\\
+			In short, $y=c$ is a horizontal asymptote if:
+			\[\lim_{x \to \infty} f(x) = c\]
+			or
+			\[\lim_{x \to -\infty} f(x) = c\]
+			where $c$ is a finite number.
+
+			Some functions may have two different horizontal asymptotes (one as $x \to \infty$ and one as $x \to -\infty$). Rational functions have at most one horizontal asymptote.
+
+			Consider the case of the rational function:
+			\[f(x)=\frac{P(x)}{Q(x)}=\frac{a_nx^n + \dots + a_1x + a_0}{b_mx^m + \dots + b_1x + a_0}\]
+			\begin{itemize}
+				\item If $P(x)$ and $Q(x)$ have the same degree ($n=m$), then the equation of the horizontal asymptote is $y=\frac{a_n}{b_m}$.
+				\item If the degree of $P(x)$ is less than the degree of $Q(x)$, then the equation of the horizontal asymptote is $y=0$.
+				\item If the degree of $P(x)$ is greater than the degree of $Q(x)$ then the rational function does not have a horizontal asymptote.
+			\end{itemize}
+		\subsection{Oblique Asymptotes}
+			A rational function has an oblique asymptote if the degree of $P(x)$ is one unit greater than the degree of $Q(x)$. To find the equation of the oblique asymptote use long division and express the rational function in the form:
+			\[f(x)=mx+b+\frac{c}{R(x)}\]
+			As $|x| \to \pm\infty$, the term $\frac{c}{R(x)}$ approaches 0 and $f(x)$ approaches $y=mx+b$.
+		\subsection{Graph Sketching}
+			We have these tools to help us sketch the graphs of functions:
+			\begin{tasks}[style=itemize](2)
+				\task x-intercepts and y-intercepts
+				\task symmetry
+				\task vertical asymptotes
+				\task horizontal asymptotes
+				\task oblique asymptotes
+				\task sign charts
+			\end{tasks}
+	\section{Graphs of Rational Functions}
+		\subsection{Characteristics of the Rational Function}
+			\[f(x)=\frac{ax+b}{cx+d} \quad | \quad a, c \neq 0\]
+			\subsubsection{Case 1: $cx+d$ is not a factor of $ax+b$}
+				\begin{description}
+					\item[Domain] $\mathbb{R} \setminus \{-\frac{d}{c}\}$
+					\item[Range] $\mathbb{R} \setminus \{\frac{a}{c}\}$
+					\item[x-intercept] $-\frac{b}{a}$
+					\item[y-intercept] $\frac{b}{d}$ if $d \neq 0$
+					\item[Symmetry] neither even nor odd
+					\item[Vertical asymptote] $x=-\frac{d}{c}$
+					\item[Horizontal asymptote] $y={a}{c}$
+					\item[Continuity] There exists an infinite break at $x=-\frac{d}{c}$
+				\end{description}
+			\subsubsection{Case 2: $cx+d$ is a factor of $ax+b$}
+				\begin{description}
+					\item[Domain] $\mathbb{R} \setminus \{-\frac{d}{c}\}$
+					\item[Range] $\{\frac{a}{c}\}$
+					\item[x-intercept] none
+					\item[y-intercept] $\frac{b}{d}$ if $d \neq 0$
+					\item[Symmetry] neither even nor odd
+					\item[Vertical asymptote] none
+					\item[Horizontal asymptote] $y=\frac{a}{c}$
+					\item[Continuity] There exists a hole at $x=-\frac{d}{c}$
+				\end{description}
+	\section{Solving Rational Equations}
+		\subsection{Rational Equations}
+			To solve a rational equation:
+			\begin{enumerate}
+				\item State restrictions
+				\item Multiply by the least common denominator
+				\item Solve the polynomial equation
+				\item Verify restrictions
+				\item Verify solution by using substitution
+			\end{enumerate}
+		\subsection{Cross Multiplication}
+			A rational equation of the form: $\frac{P(x)}{Q(x)} = \frac{R(x)}{S(x)}$, where $P(x)$, $Q(x)$, $R(x)$, and $S(x)$ are polynomial functions may be solved with cross-multiplication.
+			\[\frac{P(x)}{Q(x)} = \frac{R(x)}{Q(x)} \qquad \equiv \qquad P(x)S(s) = Q(x)R(x)\]
+		\subsection{Shortcut}
+			For a rational equation of the form $\frac{P(x)}{Q(x)} = 0$:
+			\[\frac{P(x)}{Q(x)} = 0 \quad \equiv \quad P(x) = 0 \qquad \text{if restrictions are satisfied}\]
+		\subsection{No Solution}
+			When $c$ is a constant:
+			\[\frac{\text{c}}{P(x)} = 0 \quad \text{has no solution} \quad \iff \quad c \neq 0\]
+	\section{Solving Rational Inequalities}
+		\subsection{Rational Inequalities}
+			In order to solve a nonlinear rational inequality:
+			\begin{enumerate}
+				\item State restrictions
+				\item Move all the terms to one side
+				\item Multiply the expression by the least common denominator
+				\item Simplify and factor both numerator and denominator
+				\item Create a sign chart or graph to find the solution set
+				\item Verify if restrictions are satisfied
+			\end{enumerate}
+	\section{Component Partial Fraction Decomposition}
+		\subsection{Partial Fractions}
+			The process of breaking down a rational expression such as $\frac{3x+7}{(x+5)(x+1)}$ into partial fractions such as $\frac{2}{x+5} + \frac{1}{x+1}$ is called partial fraction decomposition.
+
+			The rational function $R(x) = \frac{P(x)}{Q(x)}\ |\ Q(x) \neq 0$ is called a proper fraction when the degree of $P(x)$ is equal to the degree of $Q(x)$. We assume that $P(x)$ and $Q(x)$ have no common zeros.
+
+			Partial fraction decomposition depends on the factors in the denominator $Q(x)$. 
+			
+			When $Q(x)$ is factored as a product of $(ax+b)^n$ and $(ax^2+bx+c)^m$:
+			\[n \in \mathbb{N^*} \qquad m \in \mathbb{N^*} \qquad a \in \mathbb{R} \qquad b \in \mathbb{R} \qquad c \in \mathbb{R}\]
+			and $(ax^2+bx+c)$ is irreducible over the real numbers.
+			\newpage
+			\subsubsection{Case 1: $Q(x)$ contains only distinct linear factors}
+				\[Q(x) = (a_1x+b_1)(a_2x+b_2)\dots(a_nx+b_n)\]
+				In this case, unique real constants $C_1$, $C_2$, \dots , $C_n$ could be found such that:
+				\[\frac{P(x)}{Q(x)} = \frac{C_1}{a_1x+b_1} + \frac{C_2}{a_2x+b_2} + \dots + \frac{C_n}{a_nx+b_n}\]
+				\paragraph{Example}
+					Decompose $\frac{2x+1}{(x-1)(x+3)}$ into partial fractions.
+					\subparagraph{Step 1}
+						\[\frac{2x+1}{(x-1)(x+3)} = \frac{A}{x-1} + \frac{B}{x+3}\]
+					\subparagraph{Step 2}
+						Find the LCD of the right side and equate the numerators:
+						\[2x+1 = A(x+3) + B(x-1)\]
+					\subparagraph{Step 3}
+						Find A and B by equating all coefficients of all powers of $x$:
+
+						For the coefficient of $x^0$:
+						\[1 = 3A - B\]
+						For the coefficient of $x^1$:
+						\[2 = A + B\]
+
+						Solve the system to find that:
+						\[A = \frac{3}{4} \qquad B = \frac{5}{4}\]
+					\subparagraph{Rewrite the rational expression as a sum of two partial fractions}
+						\[\frac{2x+1}{(x-1)(x+3)} = \frac{3}{4(x-1)} + \frac{5}{4(x+1)}\]
+			\newpage
+			\subsubsection{Case 2: $Q(x)$ contains only one repeated linear factor}
+				$Q(x)$ contains a repeated factor of $(ax+b)$ such that $Q(x) = (ax+b)^n$.
+
+				In this case, the partial fraction decomposition of $R(x)$ could be written as:
+				\[R(x) = \frac{C_1}{(ax+b)} + \frac{C_2}{(ax+b)^2)} + \dots + \frac{C_n}{(ax+b)^n}\]
+				\paragraph{Example}
+					Decompose $\frac{6x-1}{x^3(2x-1)}$ into partial fractions.
+					\subparagraph{Step 1}
+						Write $R(x)$ according to case 1 and case 2 as:
+						\[\frac{6x-1}{x^3(2x-1)} = \frac{A}{x} + \frac{B}{x^2} + \frac{C}{x^3} + \frac{D}{2x-1}\]
+					\subparagraph{Step 2}
+						Multiply the expression by $x^3(2x-1)$ and equate the numerators from both sides:
+						\[6x-1 = Ax^2(2x-1) + Bx(2x-1) + C(2x-1) + Dx^3\]
+					\subparagraph{Step 3}
+						Solve for $A$, $B$, $C$, and $D$ by equating all coefficients of all powers of $x$:
+						
+						\begin{minipage}[t]{0.5\textwidth}
+							\centering
+							For the coefficient of $x^0$:
+							\[-1 = -C\]
+							For the coefficient of $x^1$:
+							\[6 = -B + 2C\]
+						\end{minipage}
+						\begin{minipage}[t]{0.5\textwidth}
+							\centering
+							For the coefficient of $x^2$:
+							\[0 = -A + 2B\]
+							For the coefficient of $x^3$:
+							\[0 = 2A + D\]
+						\end{minipage}
+
+						Now solve the system:
+
+						\begin{minipage}[t]{0.5\textwidth}
+							\begin{align*}
+								-1 &= C \\
+								C &= 1
+							\end{align*}
+							\begin{align*}
+								6 &= -B + 2 \tag{Substitute in $C=1$}\\
+								B &= -4
+							\end{align*}
+						\end{minipage}
+						\begin{minipage}[t]{0.5\textwidth}
+							\begin{align*}
+								0 &= -A - 8 \tag{Substitute in $B=-4$}\\
+								A &= -8
+							\end{align*}
+							\begin{align*}
+								0 &= -16 + D \tag{Substitute in $A=-8$}\\
+								D &= 16
+							\end{align*}
+						\end{minipage}
+					\subparagraph{Step 4}
+						Rewrite the rational expression as a sum of the partial fractions:
+						\[\frac{6x-1}{x^3(2x-1)} = -\frac{8}{x} - \frac{4}{x^2} + \frac{1}{x^3} + \frac{16}{2x-1}\]
+			\newpage
+			\subsubsection{Case 3: $Q(x)$ contains only nonrepeated irreducible quadratic factors}
+				$(a_ix+b_ix+c)$ are among the factors of $Q(x)$.
+
+				In this case, the partial fraction decomposition of $R(x)$ could be written as:
+				\[R(x) = \frac{A_1x+B_1}{(a_1x^2+b_1x+c_1)} + \frac{A_2x+B_2}{(a_2x^2+b_2x+c_2)} + \dots + \frac{A_nx+B_n}{a_nx^2+b_nx+c_n}\]
+				\paragraph{Example}
+					Decompose $\frac{4x}{(x^2+1)(x^2+2x+3)}$ into partial fractions.
+					\subparagraph{Step 1}
+						Write $R(x)$ according to case 3 as:
+						\[\frac{4x}{(x^2+1)(x^2+2x+3)} = \frac{Ax+B}{x^2+1} + \frac{Cx+D}{x^2+2x+3}\]
+					\subparagraph{Step 2}
+						Multiply the expression by $(x^2+1)(x^2+2x+3)$ and equate the numerators from both sides:
+						\[4x = (Ax+B)(x^2+2x+3) + (Cx+D)(x^2+1)\]
+					\subparagraph{Step 3}
+						Solve for $A$, $B$, $C$, and $D$ by equating all coefficients of all powers of $x$:
+
+						\begin{minipage}[t]{0.5\textwidth}
+							\centering
+							For the coefficient of $x^0$:
+							\[0 = 3B + D\]
+							For the coefficient of $x^1$:
+							\[4 = 3A + 2B + C\]
+						\end{minipage}
+						\begin{minipage}[t]{0.5\textwidth}
+							\centering
+							For the coefficient of $x^2$:
+							\[0 = 2A + B + D\]
+							For the coefficient of $x^3$:
+							\[0 = A + C\]
+						\end{minipage}
+
+						Solve the system:
+						\\
+						\begin{minipage}[t]{0.2\textwidth}
+							\begin{align*}
+								3B + D &= 2A + B + D \\
+								B &= A
+							\end{align*}
+							\begin{equation*}
+								\begin{array}{lll}
+									  &4 &= 5A + C \\
+									- &0 &=  A + C \\\hline
+									  &4 &= 4A \\
+								\end{array}
+							\end{equation*}
+							\[A=1 \quad B=1\]
+						\end{minipage}
+						\begin{minipage}[t]{0.8\textwidth}
+							\begin{align*}
+								0 &= A+C \\
+								C &= -1 \tag{Substitute in $A=1$}
+							\end{align*}
+							\begin{align*}
+								0 &= 2A + B + D \\
+								D &= -3 \tag{Substitute in $A=1$ and $B=1$}
+							\end{align*}
+						\end{minipage}
+					\subparagraph{Step 4}
+						Rewrite the rational expression as a sum of the partial fractions:
+						\[\frac{4x}{(x^2+1)(x^2+2x+3)} = \frac{x+1}{x^2+1} - \frac{x+3}{x^2+2x+3}\]

@@ -1,0 +1,243 @@
+\chapter{Introduction to Vectors}
+	\section{An Introduction to Vectors}
+		\subsection{Scalars and Vectors}
+			Scalars are described with a number.
+
+			Vectors are described with magnitude and direction.
+		\subsection{Geometric Vectors}
+			Geometric vectors are vectors not related to any coordinate system.
+
+			For example: $\vv{AB}$
+		\subsection{Algebraic Vectors}
+			Algebraic vectors are vectors related to a coordinate system.
+
+			For example: $\vv{v} = (2, 3, -1)$
+		\subsection{Position Vector}
+			The position vector is the directed line segment $\vv{OP}$ from the origin of the coordinate system $O$ to a generic point $P$.
+		\subsection{Displacement Vector}
+			The displacement vector $\vv{AB}$ is the directed line segment from the point $A$ to the point $B$.
+		\subsection{Pythagorean Theorem}
+			In a right triangle $ABC$ with $\angle C = \ang{90}$, the following relation is true:
+			\[c^2 = a^2 + b^2\]
+		\subsection{Magnitude}
+			The magnitude of $\vv{v}$ is denoted by $|\vv{v}|$, $\|\vv{v}\|$, or $v$.
+		\subsection{3D Pythagorean Theorem}
+			\[d^2 = a^2 + b^2 + c^2\]
+		\subsection{Equivalent or Equal Vectors}
+			Two vectors are equivalent or equal if they have the same magnitude and direction.
+		\subsection{Opposite Vectors}
+			Two vectors are called opposite if they have the same magnitude and opposite direction.
+
+			The vector opposite $\vv{v}$ is denoted by $-\vv{v}$. The vector opposite $\vv{AB}$ is $\vv{BA}$.
+
+			Also, $\vv{AB} = -\vv{BA}$.
+		\subsection{Parallel Vectors}
+			Two vectors are parallel if their directions are either the same or opposite.
+
+			If $\vv{v_1}$ and $\vv{v_2}$ are parallel, then we write $\vv{v_1} \parallel \vv{v_2}$.
+		\subsection{Direction}
+			True bearing is measured clockwise from North.
+
+			Quadrant bearing is given by the angle between the North-South line and the vector.
+	\section{Addition and Subtraction of Geometric Vectors}
+		\subsection{Addition of Two Vectors}
+			The vector addition $\vv{s}$ of two vectors $\vv{a}$ and $\vv{b}$ is denoted by $\vv{a}+\vv{b}$ and is called the sum or resultant of the two vectors. So:
+			\[\vv{s} = \vv{a} + \vv{b}\]
+		\subsection{Triangle Rule (Tail to Tip Rule)}
+			In order to find the resultant of two geometric vectors:
+			\begin{enumerate}
+				\item Place the second vector with its tail on the tip of the first vector.
+				\item The resultant is a vector with the tail at the tail of the first vector and the head at the head of the second vector.
+			\end{enumerate}
+		\subsection{Polygon Rule}
+			In order to find the resultant of $n$ geometric vectors:
+			\begin{enumerate}
+				\item Place the next vector with its tail on the tip of the previous vector.
+				\item The resultant is a vector with the tail at the tail of the fist vector and the head at the head of the last vector.
+			\end{enumerate}
+		\subsection{Parallelogram Rule (Tail to Tail Rule)}
+			To add two geometric vectors, the following rule can also be used:
+			\begin{enumerate}
+				\item Position both vectors with their tails at the same point.
+				\item Build a parallelogram using the vectors as two sides.
+				\item The resultant is given by the diagonal of the parallelogram starting from the common tail point.
+			\end{enumerate}
+		\subsection{Sine Law}
+			For any triangle $\triangle ABC$, the following relation is true:
+			\[\frac{\sin A}{a} = \frac{\sin B}{b} = \frac{\sin C}{c} \qquad \equiv \qquad \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}\]
+		\subsection{Cosine Law}
+			For any triangle $\triangle ABC$, the following relations are true:
+			\[a^2 = b^2 + c^2 - 2bc\cos\angle A\]
+			\[b^2 = a^2 + c^2 - 2ac\cos\angle B\]
+			\[c^2 = a^2 + b^2 - 2ab\cos\angle C\]
+		\subsection{Magnitude and Direction for Vector Sum}
+			Let $\theta = \angle(\vv{a}, \vv{b})$ be the angle between the vectors $\vv{a}$ and $\vv{b}$ when they are placed tail to tail.
+		\subsection{Vector Subtraction}
+			The subtraction operation between two vectors $\vv{a} - \vv{b}$ can be understood as a vector addition between the first vector and the opposite of the second vector:
+			\[\vv{d} = \vv{a} - \vv{b} = \vv{a} + (-\vv{b})\]
+		\subsection{Inverse Operation}
+			The vector subtraction operation is the inverse operation of the vector addition:
+			\[\vv{d} = \vv{a} - \vv{b} \quad \equiv \quad \vv{a} = \vv{b} + \vv{d}\]
+		\subsection{Magnitude and Direction for Vector Difference}
+			Let $\vv{a}$ and $\vv{b}$ be two vectors and $\vv{d} = \vv{a} - \vv{b}$ be the vector difference. Let $\theta$ be the angle between the vectors $\vv{a}$ and $\vv{b}$ when they are placed tail to tail:
+			\[\vv{d} = \vv{a} - \vv{b}\]
+			The magnitude of the vector difference is given by:
+			\[\|\vv{a} - \vv{b}\|^2 = \|\vv{a}\|^2 + \|\vv{b}\|^2 - 2\|\vv{a}\|\,\|\vv{b}\|\cos \theta\]
+			The direction of $\vv{d}$ is given by the angles $\alpha$ and $\beta$ formed by the vector sum and the vectors $\vv{b}$ and $\vv{a}$ respectively:
+			\[\frac{\|\vv{a}\|}{\sin\alpha} = \frac{\|\vv{b}\|}{\sin\beta} = \frac{\|\vv{a}-\vv{b}\|}{\sin\theta}\]
+	\section{Multiplication of a Vector by a Scalar}
+		\subsection{Multiplication of a Vector by a Scalar}
+			By multiplying a vector $\vv{v}$ by a scalar $k$, we obtain a new vector noted $k\vv{v}$ with the following properties:
+			\begin{itemize}
+				\item $k\vv{v}$ has the same direction as $\vv{v}$ if $k > 0$ and the opposite direction if $k < 0$
+				\item $\|k\vv{v}\| = |k| \times \|\vv{v}\|$
+			\end{itemize}
+		\subsection{Properties}
+			The following properties apply for multiplication of a vector by a scalar:
+			\[k(\vv{a} + \vv{b}) = k\vv{a} + k\vv{b}\]
+			\[k(m\vv{a}) = (km)\vv{a} = km\vv{a}\]
+			\[(k + m)\vv{a} = k\vv{a} + m\vv{a}\]
+		\subsection{Vector Unit}
+			A unit vector is a vector having a magnitude of 1. For any vector $\vv{v}$, a unit vector parallel to $\vv{v}$ is given by:
+			\[\hat{v} = \frac{\vv{v}}{\|\vv{v}\|}\]
+	\section{Properties of Vectors}
+		\subsection{Properties of Vectors}
+			\[\vv{a} + \vv{b} = \vv{b} + \vv{a}\]
+			\[\vv{a} + \vv{0} = \vv{0} + \vv{a} + \vv{a}\]
+			\[\vv{a} + (-\vv{a}) = (-\vv{a}) + \vv{a} = \vv{0}\]
+			\[(\vv{a} + \vv{b}) + \vv{c} = \vv{a} + (\vv{b} + \vv{c})\]
+			\[\|k\vv{a}\| = |k|\,\|\vec{a}\|\]
+			\[k(\vv{a}+\vv{b}) = k\vv{a} + k\vv{b}\]
+			\[(kl)\vv{a} = k(l\vv{a}) = l(k\vv{a})\]
+			\[(k + l)\vv{a} = k\vv{a} + l\vv{a}\]
+			\[1\vv{a} = \vv{a}\]
+			\[(-1)\vv{a} = -\vv{a}\]
+			\[0\vv{a} = \vv{0}\]
+			\[\|\vv{0}\| = 0\]
+	\section{Vectors in $R^2$ and $R^3$}
+		\subsection{Polar Coordinates}
+			Given a Cartesian system of coordinates, 2D vector $\vv{v}$ may be defined by its magnitude $\|\vv{v}\|$ and the counter-clockwise angle $\theta$ between the positive direction of the x-axis and the vector.
+
+			The pair $(\|\vv{v}\|, \theta)$ determines the polar coordinates of the 2D vector and $\vv{v} = (\|\vv{v}\|, \theta)$.
+		\subsection{Scalar Components for a 2D Vector}
+			Consider a 2D vector with the tail in the origin of the Cartesian system. Parallels through its tip to the coordinate axes intersect the x-axis at $v_x$ and the y-axis at $v_y$.
+
+			The pair $(v_x, v_y)$ determines the scalar coordinates of the 2D vector and $\vv{v} = (v_x, v_y)$.
+		\subsection{Link Between the Polar Coordinates and Scalar Components}
+			To convert a vector from the polar coordinates $\vv{v} = (\|\vv{v}\|, \theta)$ to the scalar components $\vv{v}=(v_x, v_y)$, use the formulas:
+			\[v_x = \|\vv{v}\|\cos\theta\]
+			\[v_y = \|\vv{v}\|\sin\theta\]
+			To convert a vector from the scalar components $\vv{v}=(v_x, v_y)$ to the polar coordinates $\vv{v}=(\|\vv{v}\|, \theta)$, use the formulas:
+			\[\|\vv{v}\| = \sqrt{{v_x}^2 + {v_y}^2}\]
+			\[\tan\theta = \frac{v_y}{v_x} \qquad \equiv \qquad \theta = \tan^{-1} \left(\frac{v_y}{v_x}\right)\]
+		\subsection{Magnitude of a 2D Algebraic Vector}
+			The magnitude of a 2D algebraic vector $\vv{v}=(v_x, v_y)$ is given by:
+			\[\|\vv{v}\| = \sqrt{{v_x}^2 + {v_y}^2}\]
+		\subsection{Standard Unit Vectors}
+			\[\vv{i} = (1, 0)\]
+			\[\vv{j} = (0, 1)\]
+		\subsection{Vector Components for a 2D Vector}
+			Any vector $\vv{v}$ may be decomposed into two $\perp$ vector components $\vv*{v}{x}$ and $\vv*{v}{y}$, where:
+			\[\vv*{v}{x} \parallel \vv{i} \qquad \vv*{v}{y} \parallel \vv{j}\]
+			\[\vv{v} = \vv*{v}{x} + \vv*{v}{y}\]
+			The link between the scalar components and the vector components is given by:
+			\[\vv*{v}{x} = v_x\vv{i} \qquad \vv*{v}{y} = v_y\vv{j}\]
+			A 2D vector may also be written in algebraic form as:
+			\[\vv{v} = \vv*{v}{x} + \vv*{v}{y} = v_x\vv{i} + v_y\vv{j} = (v_x, v_y)\]
+		\subsection{Position 2D Vector}
+			The directed line segment $\vv{OP}$, from the origin $O$ to a generic point $P(x, y)$ determines a vector called the position vector and:
+			\[\vv{OP} = (x, y)  = x\vv{i} + y\vv{j}\]
+		\subsection{Displacement 2D Vector}
+			The directed line segment $\vv{AB}$ from the point $A(x_A, y_a)$ to the point $B(x_B, y_B)$ determines a vector called the displacement vector and:
+			\[\vv{AB} = (x_B - x_A, y_B - y_A) = (x_B-x_A)\vv{i} + (y_B - y_A)\vv{j}\]
+		\subsection{Direction Angles}
+			Consider a 3D coordinate system and a 3D vector $\vv{v}$ with the tail in the origin $O$. Direction angles are the angles $\alpha$, $\beta$, and $\gamma$ between the vector and the positive directions of the coordinate axes.
+			\begin{description}
+				\item[$\alpha$:] the angle between the vector and the x-axis.
+				\item[$\beta$:] the angle between the vector and the y-axis.
+				\item[$\gamma$:] the angle between the vector and the z-axis.
+			\end{description}
+		\subsection{Scalar Components of a 3D Vector}
+			Consider a 3D coordinate system and a 3D vector $\vv{v}$ with the tail in the origin $O$. Parallel planes through its tip to the coordinate planes intersect the x-axis at $v_x$, the y-axis at $v_y$, and the z-axis at $v_z$.
+
+			The triple $(v_x, v_y, v_z)$ determines the scalar components of the 3D vector and $\vv{v} = (v_x, v_y, v_z)$.
+		\subsection{Link Between the Direction Angles and the 3D Scalar Coordinates}
+			The link between the direction angles ($\alpha$, $\beta$, and $\gamma$) and the scalar components of a vector ($v_x$, $v_y$, and $v_z$) is given by:
+			\[v_x = \|\vv{v}\|\cos\alpha\]
+			\[v_y = \|\vv{v}\|\cos\beta\]
+			\[v_z = \|\vv{v}\|\cos\gamma\]
+			and by:
+			\[\|\vv{v}\| = \sqrt{{v_x}^2 + {v_y}^2 + {v_z}^2}\]
+			\[\cos\alpha = \frac{v_x}{\|\vv{v}\|}\]
+			\[\cos\beta = \frac{v_y}{\|\vv{v}\|}\]
+			\[\cos\gamma = \frac{v_z}{\|\vv{v}\|}\]
+			Note that:
+			\[\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1\]
+		\subsection{Magnitude of a 3D Algebraic Vector}
+			The magnitude of a 3D algebraic vector $\vv{v} = (v_x, v_y, v_z)$ is given by:
+			\[\|\vv{v}\| = \sqrt{{v_x}^2 + {v_y}^2 + {v_z}^2}\]
+		\subsection{3D Standard Unit Vectors}
+			\[\vv{i} = (1,0,0)\]
+			\[\vv{j} = (0,1,0)\]
+			\[\vv{k} = (0,0,1)\]
+		\subsection{Vector Components for a 3D Vector}
+			Any 3D vector $\vv{v}$ may be decomposed into three $\perp$ vector components $\vv*{v}{x}$, $\vv*{v}{y}$, and $\vv*{v}{z}$ where:
+			\[\vv*{v}{x} \parallel \vv{i} \qquad \vv*{v}{y} \parallel \vv{j} \qquad \vv*{v}{z} \parallel \vv{k}\]
+			\[\vv{v} = \vv*{v}{x} + \vv*{v}{y} + \vv*{v}{z}\]
+			The link between the scalar components and the vector components is given by:
+			\[\vv*{v}{x} = v_x\vv{i} \qquad \vv*{v}{y} = v_y\vv{j} \qquad \vv*{v}{z} = v_z\vv{k}\]
+			A 3D vector may be written in algebraic form as:
+			\[\vv{v} = \vv*{v}{x} + \vv*{v}{y} + \vv*{v}{z} = v_x\vv{i} + v_y\vv{j} + v_z\vv{k} = (v_x, v_y, v_z)\]
+		\subsection{Position 3D Vector}
+			The directed line segment $\vv{OP}$ from the origin $O$ to a generic point $P(x, y, z)$ determines a vector called the position vector and:
+			\[\vv{OP} = (x, y, z) = x\vv{i} + y\vv{j} + z\vv{k}\]
+		\subsection{Displacement 3D Vector}
+			The directed line segment $\vv{AB}$ from the point $A(x_A, y_A, z_A)$ to the point $B(x_B, y_B, z_B)$ determines a vector called the displacement vector and:
+			\[\vv{AB} = (x_B - x_A, y_B - y_A, z_B - z_A)\]
+			\[\vv{AB} = (x_B - x_A)\vv{i} + (y_B - y_A)\vv{j} + (z_B - z_A)\vv{k}\]
+	\section{Operations with Algebraic Vectors in $R^2$}
+		\subsection{2D Algebraic Vectors}
+			A 2D algebraic vector may be written in components form as:
+			\[\vv{v} = (v_x, v_y)\]
+			or in terms of unit vectors as:
+			\[\vv{v} = v_x\vv{i} + v_y\vv{j}\]
+			and has a magnitude given by:
+			\[\|\vv{v}\| = \sqrt{{v_x}^2 + {v_y}^2}\]
+		\subsection{Addition of 2D Algebraic Vectors}
+			\[\vv{a} + \vv{b} = (a_x + b_x, a_y + b_y)\]
+		\subsection{Substitute of 2D Algebraic Vectors}
+			\[\vv{a} - \vv{b} = (a_x - b_x, a_y - b_y)\]
+		\subsection{Multiplication of 2D Algebraic Vector by a Scalar}
+			\[\lambda\vv{a} = (\lambda a_x, \lambda a_y)\]
+		\subsection{Vector Equations}
+			Use backward operations to solve equations using vectors:
+			\[\vv{x} + \vv{a} = \vv{b} \implies \vv{x} = \vv{b} - \vv{a}\]
+			\[\vv{a} - \vv{x} = \vv{b} \implies \vv{x} = \vv{a} - \vv{b}\]
+			\[\lambda\vv{x} = \vv{a} \implies \vv{x} = \frac{\vv{a}}{\lambda}\]
+	\section{Operations with Algebraic Vectors in $R^3$}
+		\subsection{3D Algebraic Vectors}
+			A 3D algebraic vector may be written as:
+			\[\vv{v} = (v_x, v_y, v_z) \qquad \equiv \qquad \vv{v} = v_x\vv{i} + v_y\vv{j} + v_z\vv{k}\]
+			and has a magnitude given by:
+			\[\|\vv{v}\| = \sqrt{{v_x}^2 + {v_y}^2 + {v_z}^2}\]
+		\subsection{Addition of 3D Algebraic Vectors}
+			\[\vv{a} + \vv{b} = (a_x + b_x, a_y + b_y, a_z + b_z)\]
+		\subsection{Subtraction of 3D Algebraic Vectors}
+			\[\vv{a} - \vv{b} = (a_x - b_x, a_y - b_y, a_z - b_z)\]
+		\subsection{Multiplication of 3D Algebraic Vector by a Scalar}
+			\[\lambda\vv{a} = (\lambda a_x, \lambda a_y, \lambda a_z)\]
+		\subsection{Midpoint}
+			The midpoint of the segment line $\vv{AB}$ is the point $M$ such that $\vv{MA} + \vv{MB} = \vv{0}$
+		\subsection{Centroid}
+			The centroid of a system of points $P_1, P_2, \dots, P_n$ is the point $C$ defined by:
+			\[\vv{OC} = \frac{\vv*{OP}{1} + \vv*{OP}{2} + \dots + \vv*{OP}{n}}{n}\]
+		\subsection{Parallelism}
+			$\vv{a} \parallel \vv{b}$ if there exists $\lambda$ such that $\vv{a} = \lambda\vv{b}$.
+
+			$\vv{a}$ and $\vv{b}$ may have the same direction or the opposite direction.
+		\subsection{Co-linearity}
+			Three points $A$, $B$, and $C$ are collinear if $\vv{AB} \parallel \vv{BC}$.
+		\subsection{Linear Dependency}
+			$\vv{a}$, $\vv{b}$, and $\vv{c}$ are linear dependent if there exists $\lambda$ and $\mu$ such that $\vv{c} = \lambda\vv{a} + \mu\vv{b}$.
+
+			The vectors must be coplanar for this to ever be true.

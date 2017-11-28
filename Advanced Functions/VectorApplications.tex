@@ -1,0 +1,193 @@
+\chapter{Applications of Vectors}
+	\section{Vectors as Forces}
+		\subsection{Vector Force}
+			The force is a vector and the measurement unit is \si{\newton}.
+		\subsection{Resultant Force}
+			The vector sum of a system of forces is called the resultant.
+			\[\vv{R} = \vv*{F}{1} + \vv*{F}{2} + \dots + \vv*{F}{n}\]
+		\subsection{Algebraic Resultant Force}
+			The scalar components of the resultant force are given by:
+			\[R_x = F_{1x} + F_{2x} + \dots + F_{nx}\]
+			\[R_y = F_{1y} + F_{2y} + \dots + F_{ny}\]
+			The magnitude and the direction of the resultant force are given by:
+			\[\|\vv{R}\| = \sqrt{{R_x}^2 + {R_y}^2}\]
+			\[\tan\theta = \frac{R_y}{R_x} \quad \equiv \quad \theta = \tan^{-1}\left(\frac{R_y}{R_x}\right)\]
+		\subsection{Equilibrium}
+			A system of forces is in a state of equilibrium if $\vv{R} = \vv{0}$.
+
+			Three forces in equilibrium form a triangle.
+
+			Consequently:
+			\begin{itemize}
+				\item the forces are coplanar
+				\item the largest magnitude is less than or equal to the sum of the other two magnitudes
+			\end{itemize}
+		\subsection{Equilibrant Force}
+			The equilibrant force is the force $\vv{E}$ required to be added to a system of forces with a resultant force $\vv{R}$ such that the new force is at equilibrium.
+			\[\vv{R} + \vv{E} = \vv{0}\]
+			\[\vv{E} = -\vv{R}\]
+			\[\vv{E} = (-R_x, -R_y)\]
+	\section{Velocity}
+		\subsection{Velocity}
+			Velocity is a vector and the measurement unit is \si{\m/\s} or \si{\km/\hour}.
+		\subsection{Relative Velocity}
+			The relative velocity of the object $B$ travelling at $\vv*{v}{B}$ relative to the object $A$ travelling at $\vv*{v}{A}$ is given by:
+			\[\vv*{v}{BA} = \vv*{v}{B} - \vv*{v}{A}\]
+
+			If $A$ is at rest ($\vv*{v}{A} = \vv{0}$), then $\vv*{v}{BA} = \vv*{v}{B}$.
+		\subsection{Boat Velocity}
+			The boat velocity relative to the ground is the vector sum between the boat velocity relative to the water ($\vv*{v}{bw}$) and the water velocity relative to the ground ($\vv*{b}{wg}$):
+			\[\vv*{v}{bg} = \vv*{v}{bw} + \vv*{v}{bg}\]
+		\subsection{Plane Velocity}
+			The plane velocity relative to the ground is the vector sum between the plane velocity relative to the air ($\vv*{v}{pa}$) and the air velocity relative to the ground ($\vv*{v}{ag}$):
+			\[\vv*{v}{pg} = \vv*{v}{pa} + \vv*{v}{ag}\]
+	\section{Dot Product of two Geometric Vectors}
+		\subsection{Definition}
+			The dot product of two geometric vectors $\vv{a}$ and $\vv{b}$ with an angle $\theta = \angle(\vv{a}, \vv{b})$ between them (when positioned tail to tail) is a scalar defined by:
+			\[\vv{a} \cdot \vv{b} = \|\vv{a}\|\|\vv{b}\|\cos\theta\]
+			By convention $\ang{0} \leq \theta \leq \ang{180}$.
+		\subsection{Properties of Dot Product}
+			\begin{itemize}
+				\item $\vv{a} \cdot \vv{b}$ is a scalar and a real number
+				\item If $\vv{a} \perp \vv{b}$ then $\vv{a} \cdot \vv{b} = 0$ because $\cos\ang{90} = 0$
+				\item If $\vv{a} \cdot \vv{b} = 0$ then $\|\vv{a}\| = 0$ or $\|\vv{b}\| = 0$ or $\vv{a} \perp \vv{b}$
+				\item If $\ang{0} < \theta < \ang{90}$ then $\cos\theta > 0$ and $\vv{a} \cdot \vv{b} > 0$
+			\end{itemize}
+	\section{Dot Product of Algebraic Vectors}
+		\subsection{Dot Product for Standard Unit Vectors}
+			The dot product of the standard unit vectors is given by:
+			\begin{center}
+				\begin{minipage}{0.3\textwidth}
+					\[\vv{i} \cdot \vv{i} = 1\]
+					\[\vv{i} \cdot \vv{j} = 0\]
+				\end{minipage}
+				\begin{minipage}{0.3\textwidth}
+					\[\vv{j} \cdot \vv{j} = 1\]
+					\[\vv{j} \cdot \vv{k} = 0\]
+				\end{minipage}
+				\begin{minipage}{0.3\textwidth}
+					\[\vv{k} \cdot \vv{k} = 1\]
+					\[\vv{k} \cdot \vv{i} = 0\]
+				\end{minipage}
+			\end{center}
+		\subsection{Dot Product for Two Algebraic Vectors}
+			\[\vv{a} \cdot \vv{b} = a_xb_x + a_yb_y + a_zb_z\]
+		\subsection{Angle Between Two Vectors}
+			The angle $\theta = \angle(\vv{a}, \vv{b})$ between two vectors $\vv{a}$ and $\vv{b}$ when positioned tail to tail is given by:
+			\[\cos\theta = \frac{\vv{a} \cdot \vv{b}}{\|\vv{a}\|\|\vv{b}\|} = \frac{a_xb_x + a_yb_x + a_zb_z}{\sqrt{{a_x}^2 + {a_y}^2 + {a_z}^2 \vphantom{{b_x}^2}}\sqrt{{b_x}^2 + {b_y}^2 + {b_z}^2}}\]
+
+			Notes:
+			\begin{itemize}
+				\item If $\cos\theta = 1$ then $\vv{a}$ and $\vv{b}$ are parallel and have the same direction
+				\item If $\cos\theta = -1$ then $\vv{a}$ and $\vv{b}$ are parallel but have opposite directions
+				\item If $\cos\theta = 0$ then $\vv{a} \perp \vv{b}$
+				\item If $\cos\theta > 0$ then $\ang{0} < \theta < \ang{90}$
+				\item If $\cos\theta < 0$ then $\ang{90} < \theta < \ang{180}$
+			\end{itemize}
+	\section{Scalar and Vector Projections}
+		\subsection{Scalar Projection}
+			The scalar projection of the vector $\vv{a}$ onto the vector $\vv{b}$ is a scalar defined as:
+			\[SProj(\vv{a} \text{ onto } \vv{b}) = \|\vv{a}\|\cos\theta \qquad \text{where } \theta = \angle(\vv{a}, \vv{b})\]
+			\[SProj(\vv{a} \text{ onto } \vv{b}) \equiv SProj_{\vv{b}}\vv{a}\]
+		\subsection{Special Cases}
+			Consider two vectors $\vv{a}$ and $\vv{b}$:
+			\begin{itemize}
+				\item If $\vv{a} \parallel \vv{b}$ and $\vv{a}$ has the same direction as $\vv{b}$ then $SProj_{\vv{b}}\vv{a} = \|\vv{a}\|$
+				\item If $\vv{a} \parallel \vv{b}$ and $\vv{a}$ has the opposite direction of $\vv{b}$ then $SProj_{\vv{b}}\vv{a} = -\|\vv{a}\|$
+				\item If $\vv{a} \perp \vv{b}$ then $SProj_{\vv{b}}\vv{a}=0$
+			\end{itemize}
+		\subsection{Dot Product and Scalar Projection}
+			\[SProj_{\vv{b}}\vv{a} = \frac{\vv{a} \cdot \vv{b}}{\|\vv{b}\|}\]
+
+			\[SProj_{\vv{i}}\vv{a} = a_x\]
+			\[SProj_{\vv{j}}\vv{a} = a_y\]
+			\[SProj_{\vv{k}}\vv{a} = a_z\]
+		\subsection{Vector Projection}
+			The vector projection of the vector $\vv{a}$ onto the vector $\vv{b}$ is a vector defined as:
+			\[VProj_{\vv{b}}\vv{a} = \|\vv{a}\|\cos\theta\frac{\vv{b}}{\|\vv{b}\|}\]
+			\[VProj_{\vv{b}}\vv{a} = (SProj_{\vv{b}}\vv{a})\hat{b}\]
+		\subsection{Dot Product and Vector Projection}
+			The vector projection of the vector $\vv{a}$ onto the vector $\vv{b}$ can be written using the dot product as:
+			\[VProj_{\vv{b}}\vv{a} = \frac{(\vv{a} \cdot \vv{b})\vv{b}}{\|\vv{b}\|^2}\]
+
+			\[VProj_{\vv{i}}\vv{a} = a_x\vv{i}\]
+			\[VProj_{\vv{j}}\vv{a} = a_y\vv{j}\]
+			\[VProj_{\vv{k}}\vv{a} = a_z\vv{j}\]
+	\section{Cross Product}
+		\subsection{Right Hand System}
+			Also known as the Gugoiu Nation gang symbol, the first three fingers (thumb, index, and middle) on the right hand correspond to the $x$, $y$, and $z$ axes respectively.
+		\subsection{Cork-Screw Rule}
+			The cork-screw rule describes a right hand system based on the cork-screw property: if you rotate the x-axis towards the y-axis using the shortest path, the screw goes in the positive direction of the z-axis.
+		\subsection{Cross Product}
+			The cross product between two vectors $\vv{a}$ and $\vv{b}$ is a vector quantity denoted by $\vv{a} \times \vv{b}$ having the following properties:
+			\begin{itemize}
+				\item $\|\vv{a} \times \vv{b}\| = \|\vv{a}\|\|\vv{b}\|\sin\alpha$ \qquad where $\alpha = \angle(\vv{a}, \vv{b})$
+				\item $\vv{a} \times \vv{b}$ is $\perp$ to both $\vv{a}$ and $\vv{b}$
+				\item the vectors $\vv{a}$, $\vv{b}$, and $\vv{a} \times \vv{b}$ form a right-handed system with $\vv{a}$ as the thumb, $\vv{b}$ as the index finger, and $\vv{a} \times \vv{b}$ as the middle finger.
+			\end{itemize}
+		\subsection{Specific Cases}
+			\begin{itemize}
+				\item If $\vv{a} \parallel \vv{b}$ then $\vv{a} \times \vv{b} = \vv{0}$
+				\item If $\vv{a} \perp \vv{b}$ then $\|\vv{a} \times \vv{b}\|$ is at a maximum for the given magnitudes
+				\item If $\vv{a} = \vv{b}$ then $\vv{a} \times \vv{b} = \vv{0}$
+			\end{itemize}
+		\subsection{Cross Product of Unit Vectors}
+			The cross product of the standard unit vectors are given by:
+			\begin{center}
+				\begin{minipage}{0.3\textwidth}
+					\[\vv{i} \times \vv{i} =\vv{0}\]
+					\[\vv{i} \times \vv{j} =\vv{k}\]
+					\[\vv{i} \times \vv{k} =\vv{-j}\]
+				\end{minipage}
+				\begin{minipage}{0.3\textwidth}
+					\[\vv{j} \times \vv{j} =\vv{0}\]
+					\[\vv{j} \times \vv{k} =\vv{i}\]
+					\[\vv{j} \times \vv{i} =\vv{-k}\]
+				\end{minipage}
+				\begin{minipage}{0.3\textwidth}
+					\[\vv{k} \times \vv{k} =\vv{0}\]
+					\[\vv{k} \times \vv{i} =\vv{j}\]
+					\[\vv{k} \times \vv{j} =\vv{-i}\]
+				\end{minipage}
+			\end{center}
+		\subsection{Cross Product of Two Algebraic Vectors}
+			\[\vv{a} \times \vv{b} = \vv{i}(a_yb_z - a_zb_y) -\vv{j}(a_xb_z - a_zb_x) + \vv{k}( a_xb_y - a_yb_x)\]
+		\subsection{Properties of Cross Product}
+			\begin{itemize}
+				\item $\vv{a} \times \vv{b} = -\vv{b} \times \vv{a}$ \qquad (anti-commutative property)
+				\item $\lambda(\vv{a} \times \vv{b}) = (\lambda\vv{a}) \times \vv{b} = \vv{a} \times (\lambda\vv{b})$
+				\item $\vv{a} \times (\vv{b} + \vv{c}) = \vv{a} \times \vv{b} + \vv{a} \times \vv{c}$ \qquad (distributive property)
+				\item $\vv{a} \times \vv{b} = \vv{0} \iff ((\vv{a} = \vv{0}) \vee (\vv{b} = \vv{0}) \vee (\vv{a} \parallel \vv{b}))$
+				\item $\vv{a} \times \vv{0} = \vv{0}$
+				\item $\vv{a} \times \vv{a} = \vv{0}$
+				\item $\vv{a} \cdot (\vv{b} \times \vv{c}) = \vv{b} \cdot (\vv{c} \times \vv{a}) = \vv{c} \cdot (\vv{a} \times \vv{b})$ \qquad (mixed product)
+				\item $\vv{a} \times (\vv{b} \times \vv{c}) = (\vv{c} \cdot \vv{a})\vv{b} - (\vv{b} \cdot \vv{a})\vv{c}$ \qquad (triple cross product)
+			\end{itemize}
+	\section{Applications of the Dot and Cross Product}
+		\subsection{Work}
+			The work $W$ done by a constant force $\vv{F}$ acting on an object during a displacement $\vv{d}$ is given by:
+			\[W = \vv{F} \cdot \vv{d} = \|\vv{F}\|\|\vv{d}\|\cos \alpha\]
+			where
+			\[\alpha = \angle (\vv{F}, \vv{d})\]
+		\subsection{Torque}
+			The torque (rotational or turning effect) about the point $A$, created by a force $\vv{F}$ acting on an object located at the point $B$ is given by:
+			\[\vv{\tau} = \vv{AB} \times \vv{F} = \vv{r} \times \vv{F}\]
+			\[\|\vv{\tau}\| = rF\sin\alpha\]
+			where
+			\[\alpha = \angle\left(\vv{F}, \vv{r}\right)\]
+
+			$\vv{r}$ is in \si{\metre}
+
+			$\vv{F}$ is in \si{\newton}
+			
+			$\vv{\tau}$ is in \si{\newton\metre}
+		\subsection{Parallelogram Area}
+			\[A = \|\vv{a} \times \vv{b}\| = \|\vv{a}\|\|\vv{b}\|\sin\alpha\]
+			\[\alpha = \angle(\vv{a}, \vv{b})\]
+		\subsection{Triangle Area}
+			The area of a triangle defined by the vectors $\vv{a}$ and $\vv{b}$ is given by:
+			\[A = \frac{\|\vv{a} \times \vv{b}\|}{2} = \frac{\|\vv{a}\|\|\vv{b}\|\sin\alpha}{2}\]
+			\[\alpha = \angle(\vv{a}, \vv{b})\]
+		\subsection{Parallelepiped Volume}
+			The volume of a parallelepiped defined by the vectors $\vv{a}$, $\vv{b}$, and $\vv{c}$ is given by:
+			\[V = |\vv{c} \cdot (\vv{a} \times \vv{b})| = |\vv{a} \cdot (\vv{b} \times \vv{c})| = |\vv{b} \cdot (\vv{c} \times \vv{a})|\]

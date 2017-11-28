@@ -1,0 +1,224 @@
+\setcounter{chapter}{1}
+\chapter{Finding the Derivative}
+	\section{Derivative Function}
+		\subsection{Derivative Function}
+			Given a function $y=f(x)$, the derivative function of $f$ is a new function called $f'$, defined by:
+			\[f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\]
+		\subsection{Differentiability}
+			$f(x)$ is differentiable at $x$ if $f'(x)$ exists.
+		\subsection{Interpretations of Derivative Function}
+			The slope of the tangent line to the graph of $y=f(x)$ at the point $P(a, f(a))$ is given by: $m=f'(a)$.
+
+			The IRC in the variable $y$ with respect to $x$ where $y=f(x)$ and $x=a$ is given by: $IRC = f'(a)$.
+		\subsection{Notations and Reading}
+			\begin{description}
+				\item[Lagrange Notation] $y' = f'(x)$
+				\item[Leibnitz Notation] $\frac{dy}{dx} = \frac{d}{dx}f(x)$
+			\end{description}
+		\subsection{First Principles}
+			\begin{description}
+				\item[Differentiation:] the process to find the derivative of a function.
+				\item[First Principles:] the process of differentiation by computing the limit:
+					\[f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\]
+			\end{description}
+		\subsection{Non-Differentiability}
+			A function is not differentiable at $x=a$ if $f'(a)$ does not exist.
+			\begin{itemize}
+				\item If a function $f$ is not continuous at $x=a$ then the function $f$ is not differentiable at $x=a$.
+				\item If a function $f$ is continuous at $x=a$ then the function $f$ may or may not be differentiable at $x=a$.
+			\end{itemize}
+		\subsection{Differentiability Point}
+			If the function $y=f(x)$ is differentiable at $x=a$ then there is only one tangent line at $P(a, f(a))$, and it is not vertical.
+		\subsection{Corner Point}
+			$P(a, f(a))$ is a corner point if there are two distinct tangent lines at $P$, one for the left-hand branch and one for the right-hand branch.
+			
+			For example:
+			\\
+			\begin{equation*}
+				f(x)=
+				\begin{cases}
+					f_1(x), \quad x < a\\
+					f_2(x), \quad x > a\\
+				\end{cases}
+				\qquad\text{and } f_1'(a) \neq f_2'(a)
+			\end{equation*}
+		\subsection{Infinite Slope Point}
+			$P(a, f(a))$ is an infinite slope point if the tangent line at $P$ is vertical and the function is increasing or decreasing in the neighborhood of $P$.
+			\[f'(a) = \infty \qquad \text{or} \qquad f'(a) = -\infty\]
+		\subsection{Cusp Point}
+			$P(a,f(a))$ is a cusp point if the tangent line at $P$ is vertical and the function is increasing on one side of the point $P$ and decreasing on the other side. In this case, $\nexists\ f'(a)$.
+	\section{Derivative of Polynomial Functions}
+		\subsection{Power Rule}
+			Consider the power function
+			\[y=x^n;\qquad x,\ n \in \mathbb{R}\]
+			Then:
+			\[(x^n)' = nx^{n-1}\]
+			\[\frac{d}{dx}x^n = nx^{n-1}\]
+			
+			Some useful specific cases:
+			\[\left(\frac{1}{x^n}\right)' = -\frac{n}{x^{n+1}}\]
+			\[\left(\frac{a}{x^n}\right)' = -\frac{na}{x^{n+1}}\]
+			\[(1)'=0\]
+			\[(x)'=1\]
+			\[(\sqrt{x})'=\frac{1}{2\sqrt{x}}\]
+		\subsection{Constant Function Rule}
+			Consider a constant function:
+			\[f(x) = c \qquad c \in \mathbb{R}\]
+			Then:
+			\[(c)' = 0\]
+			\[\frac{d}{dx}c=0\]
+		\subsection{Constant Multiple Rule}
+			Consider the function:
+			\[g(x)=cf(x)\]
+			Then:
+			\[[cf(x)]' = cf'(x)\]
+			\[\frac{d}{dx}[cf(x)] = c\frac{d}{dx}f(x)\]
+			\[(cf)'=cf'\]
+		\subsection{Sum and Difference Rules}
+			\[[f(x) \pm g(x)]' = f'(x) \pm g'(x)\]
+			\[\frac{d}{dx}[f(x) \pm g(x)] = \frac{d}{dx}f(x) \pm \frac{d}{dx}g(x)\]
+			\[(f \pm g)' = f' \pm g'\]
+		\subsection{Tangent Line}
+			To find the equation of the tangent line at the point $P(a,f(a))$:
+			\begin{enumerate}
+				\item Find derivative function $f'(x)$
+				\item Find the slope of the tangent using $m=f'(a)$
+				\item Use the slope-point formula to get the equation of the tangent line:
+					\[y-f(a)=m(x-a) \qquad \equiv \qquad y = m(x-a) + f(a)\]
+			\end{enumerate}
+		\subsection{Normal Line}
+			If $m_T$ is the slope of the tangent line, then the slope of the normal line is given by:
+			\[m_N = -\frac{1}{m_T}\]
+		\subsection{Differentiability for Piecewise Defined Functions}
+			Consider the piecewise defined function:
+			\begin{equation*}
+				f(x)=
+				\begin{cases}
+					f_1(x), \quad x < a\\
+					c, \quad x = a\\
+					f_2(x), \quad x > a
+				\end{cases}
+			\end{equation*}
+			$f(x)$ is differentiable at $x=a$ if and only if both:
+			\begin{enumerate}
+				\item the function is continuous at $x=a$
+				\item $f_1'(a) = f_2'(a)$
+			\end{enumerate}
+	\section{Product Rule}
+		\subsection{Product Rule}
+			If $f$ and $g$ are differentiable at $x$ then so is $fg$ and:
+			\[(fg)'(x) = f'(x)g(x) + f(x)g'(x)\]
+			\[(fg)' = f'g + fg'\]
+		\subsection{Product of Three Functions}
+			If $f$, $g$, and $h$ are differentiable at $x$ then so is $fgh$ and:
+			\[(fgh)' = f'gh + fg'h + fgh'\]
+			\begin{proof}
+				\begin{align*}
+					 &(fgh)'\\
+					=&(fg)'h + fgh'\\
+					=&(f'g + fg')h + fgh'\\
+					=&f'gh + fg'h + fgh'\qedhere
+				\end{align*}
+			\end{proof}
+		\subsection{Generalized Power Rule}
+			If $f$ is differentiable at $x$, then so if $f^n$ and:
+			\[([f(x)]^n)' = n[f(x)]^{n-1}f'(x)\]
+			\[(f^n)' = nf^{n-1}f'\]
+	\section{Quotient Rule}
+		\subsection{Quotient Rule}
+			If $f$ and $g$ are differentiable at $x$ and $g(x) \neq 0$ then so is $\frac{f}{g}$ and:
+			\[\left(\frac{f(x)}{g(x)}\right)' = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}\]
+			\[\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}\]
+
+			``Low dee high minus high dee low. Square the bottom and off we go.''
+			\[\left(\frac{f}{g}\right)' = \frac{gf' - fg'}{g^2}\]
+	\section{Chain Rule}
+		\subsection{Composition of Functions}
+			If $u=g(x)$ and $v=f(u)$ then:
+			\[x \underset{u=g(x)}{\longrightarrow} u \underset{v=f(u)}{\longrightarrow} v\]
+			and
+			\[v=f(u)=f(g(x))=(f \circ g)(x)\]
+		\subsection{Chain Rule (Leibniz Notation)}
+			\[\Delta x \underset{u=g(x)}{\longrightarrow} \Delta u \underset{v=f(u)}{\longrightarrow} \Delta v\]
+			and
+			\[\frac{dv}{dx} = \frac{dv}{du}\frac{du}{dx}\]
+		\subsection{Composition of Three Functions}
+			\[x \underset{u=h(x)}{\longrightarrow} u \underset{v=g(u)}{\longrightarrow} v \underset{w=f(v)}{\longrightarrow} w\]
+			\[\frac{dw}{dx} = \frac{dw}{dv} \frac{dv}{du} \frac{du}{dx}\]
+		\subsection{Chain Rule (Lagrange Notation)}
+			\[v = f(u) = f(g(x)) = (f \circ g)(x)\]
+			\begin{align*}
+				\frac{dv}{dx} &\rightarrow [f(g(x))]'\\
+				\frac{dv}{du} &\rightarrow f'(u) = f'(g(x))\\
+				\frac{du}{dx} &\rightarrow g'(x)
+			\end{align*}
+			\[\frac{dv}{dx} = \frac{dv}{du} \frac{du}{dx} \rightarrow (f \circ g)'(x) = [f(g(x))]' = f'(g(x))g'(x)\]
+
+			If $g$ is differentiable at $x$ and $f$ is differentiable at $f(x)$ then the composition $(f \circ g)(x) = f(g(x))$ is differentiable at $x$ and
+
+			So, the derivative of $f(g(x))$ is the derivative of the outside function $f$ evaluated of the inside function $g$ times the derivative of the inside function $g$.
+\setcounter{chapter}{4}
+\chapter{Derivatives of Exponential, Trigonometric, and Logarithmic Functions}
+	\section{Derivative of Exponential Function}
+		\subsection{Review of Exponential Functions}
+			The exponential function is defined as:
+			\[y=f(x)=b^x; \quad b > 0,\ b \neq 1\]
+			The x-axis is a horizontal asymptote.
+		\subsection{Number $\e$}
+			The number $\e$ is defined by:
+			\[\e = \lim_{n \to \infty}\left(1 + \frac{1}{n}\right)^n\]
+			which can also be written as:
+			\[\e = \lim_{u \to 0}(1 + u)^{\frac{1}{u}}\]
+		\subsection{Exponential Function}
+			The exponential function $\e^x$ may be evaluated using the limit:
+			\[\e^x=\lim_{n \to \infty}\left(1 + \frac{x}{n}\right)^n\]
+		\subsection{Derivative of $\e^x$}
+			\[(\e^x)' = \e^x\]
+		\subsection{Derivative of $\e^{f(x)}$}
+			\[\left(\e^{f(x)}\right)' = \e^{f(x)}f'(x)\]
+		\subsection{Derivative of $b^x,\ b > 0,\ b \neq 1$}
+			\[(b^x)' = (\ln b)b^x\]
+		\subsection{Derivative of $b^{f(x)}$}
+			\[\left(b^{f(x)}\right)' = (\ln b)b^{f(x)}f'(x)\]
+	\setcounter{section}{3}
+	\section{Derivative of Trigonometric Functions}
+		\subsection{Review of Trigonometric Functions}
+			\[\sin x: \mathbb{R} \mapsto [-1, 1] \qquad \sin(x+2\pi)=\sin x\]
+			\[\cos x: \mathbb{R} \mapsto [-1, 1] \qquad \cos(x+2\pi)=\cos x\]
+			\[\sin\left(x + \frac{\pi}{2}\right) = \cos x \qquad \sin(x+\pi) = -\sin x\]
+			\[\sin(2x) = 2\sin x \cos x \qquad \cos(2x) = \cos^2 x - \sin^2 x\]
+			\[\tan x = \frac{\sin x}{\cos x} \qquad \tan x: \mathbb{R} \setminus \left\{\frac{\pi}{2} + n\pi,\ n \in \mathbb{Z}\right\} \mapsto \mathbb{R}\]
+			\subsubsection{Fundamental Limits}
+				\[\lim_{h \to 0} \frac{\sin h}{h} = 1\]
+				\[\lim_{h \to 0} \frac{\cos h - 1}{h} = 0\]
+				\[\lim_{h \to 0} \frac{\e^h - 1}{h} = 1\]
+		\subsection{Derivative of $\sin x$}
+			\[(\sin x)' = \cos x\]
+		\subsection{Derivative of $\sin f(x)$}
+			\[[\sin f(x)]' = (\cos f(x))f'(x)\]
+		\subsection{Derivative of $\cos x$}
+			\[(\cos x)' = -\sin x\]
+		\subsection{Derivative of $\cos f(x)$}
+			\[[\cos f(x)]' = -[\sin f(x)]f'(x)\]
+		\subsection{Derivative of $\tan x$}
+			\[(\tan x)' = \frac{1}{\cos^2 x} = \sec^2 x\]
+			\[[\tan f(x)]' = \frac{f'(x)}{\cos^2 f(x)} = \sec^2f(x)f'(x)\]
+	\section{Derivative of Logarithmic Function}
+		\subsection{Review of Logarithmic Function}
+			\[y=b^x \quad \equiv \quad x=\log_b y\]
+
+			\[y=f(x)=\log_b x,\qquad b > 0,\ b \neq 1, x > 0\]
+			\[\log_b (xy) = \log_b x + \log_b y\]
+			\[\log_b \frac{x}{y} = \log_b x - \log_b y\]
+			\[\log_b x^n = n\log_b x\]
+			\[\log_a x = \frac{\log_b x}{\log_b a}\]
+			\[\log_b 1 = 0\]
+			\[\log_b b = 1\]
+		\subsection{Derivative of $\ln x$}
+			\[(\ln x)' = \frac{1}{x}\]
+		\subsection{Derivative of $\ln f(x)$}
+			\[[\ln f(x)]' = \frac{f'(x)}{f(x)}\]
+		\subsection{Derivative of $\log_b x$}
+			\[(\log_b x)' = \frac{1}{(\ln b)x}\]
+		\subsection{Derivative of $\log_b f(x)$}
+			\[[\log_b f(x)]' = \frac{f'(x)}{(\ln b)f(x)}\]

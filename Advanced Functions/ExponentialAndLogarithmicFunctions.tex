@@ -1,0 +1,280 @@
+\setcounter{chapter}{7}
+\chapter{Exponential and Logarithmic Functions}
+	\section{Exploring the Logarithmic Function}
+		\subsection{Logarithmic Functions}
+			The logarithmic function is defined as the inverse function of the exponential function.
+
+			So if $f(x) = b^x$, then $f^{-1}(x)=\log_bx$.
+			\[y=b^x \quad \equiv \quad x=\log_by\]
+			\[b \in \{\mathbb{N^*} \setminus 1\}\]
+		\subsection{Domain, Range, and Other Restrictions}
+			The domain and the range of the exponential function are defined by:
+			\[b^x: (-\infty, +\infty) \rightarrow (0, +\infty)\]
+			The domain and range of the logarithmic function are defined by:
+			\[\log_bx: (0, +\infty) \rightarrow (-\infty, +\infty)\]
+			\[b > 0, b \neq 1\]
+		\subsection{Basic Formulas}
+			\paragraph{Prove: $\log_b1=0$}
+				\begin{proof}
+					\[y=b^x \quad \equiv \quad x=\log_by\]
+					Here, $y=1$ and $x=0$.
+					\[b^0 = 1\]
+				\end{proof}
+			\paragraph{Prove: $\log_bb=1$}
+				\begin{proof}
+					\[y=b^x \quad \equiv \quad x=\log_by\]
+					Here, $y=b$ and $x=1$.
+					\[b = b^1\]
+				\end{proof}
+			\paragraph{Prove: $\log_b\frac{1}{b}=-1$}
+				\begin{proof}
+					\[y=b^x \quad \equiv \quad x=\log_by\]
+					Here, $y=\frac{1}{b}$ and $x=-1$.
+					\[b^{-1} = \frac{1}{b}\]
+				\end{proof}
+			\paragraph{Prove: $\log_{\frac{1}{b}}b=-1$}
+				\begin{proof}
+					\[y=b^x \quad \equiv \quad x=\log_by\]
+					Here, $y=b$ and $x=-1$.
+					\[b^{-1} = \frac{1}{b}\]
+				\end{proof}
+			\paragraph{Prove: $\log_bb^n=n$}
+				\begin{proof}
+					\[y=b^x \quad \equiv \quad x=\log_by\]
+					Here, $y=b^n$ and $x=n$.
+					\[b^n = b^n\]
+				\end{proof}
+		\subsection{Basic Equations}
+			Solve each equation by converting it to the exponential form.
+			\paragraph{Solve: $x=\log_5 25$}
+				\begin{align*}
+					5^x &= 25\\
+					5^x &= 5^2\\
+					x &= 2
+				\end{align*}
+			\paragraph{Solve: $x=\log_4 1$}
+				\begin{align*}
+					b^x &= 1\\
+					x &= 0
+				\end{align*}
+			\paragraph{Solve: $\log_x 16 = 2$}
+				\begin{align*}
+					16 &= x^2\\
+					x &= \pm 4\\
+					x > 0, x \neq 1 \implies x &= 4
+				\end{align*}
+			\paragraph{Solve: $\log_x 3 = \frac{1}{2}$}
+				\begin{align*}
+					x^{\frac{1}{2}} &= 3\\
+					x &= 9
+				\end{align*}
+			\paragraph{Solve: $\log_2 x = -2$}
+				\begin{align*}
+					x &= 2^{-2}\\
+					x &= \frac{1}{4}
+				\end{align*}
+		\subsection{Graph of the Logarithmic Function}
+			\begin{minipage}{0.5\textwidth}
+				\centering
+				\[f(x)=2^x\]
+				\begin{tikzpicture}
+					\begin{axis}[
+						width=\textwidth,
+						xmin=-6,
+						xmax=6,
+						xtick style={draw=none},
+						ytick style={draw=none},
+						xticklabels={},
+						yticklabels={},
+					]
+					\addplot[mystyle][
+						domain=-5:5,
+						samples=50,
+					]
+					{2^x};
+					\end{axis}
+				\end{tikzpicture}
+			\end{minipage}
+			\begin{minipage}{0.5\textwidth}
+				\centering
+				\[f^{-1}(x)=\log_2 x\]
+				\begin{tikzpicture}
+					\begin{axis}[
+						width=\textwidth,
+						xmin=-1,
+						xmax=6,
+						xtick style={draw=none},
+						ytick style={draw=none},
+						xticklabels={},
+						yticklabels={},
+					]
+					\addplot[mystyle][
+						domain=-1:5,
+						samples=50,
+					]
+					{ln(x)/ln(2)};
+					\end{axis}
+				\end{tikzpicture}
+			\end{minipage}
+		\subsection{Characteristics of the Logarithmic Function}
+			\begin{description}
+				\item[Domain] $(0, +\infty)$
+				\item[Range] $(-\infty, +\infty)$
+				\item[x-intercept] $(1, 0)$
+				\item[y-intercept] None
+				\item[Increase/Decreasing] Increasing if $b > 1$. Decreasing if $0 < b < 1$.
+				\item[Horizontal asymptote] None
+				\item[Vertical asymptote] $x=1$
+				\item[Continuity] Continuous
+				\item[One-to-one] Yes
+			\end{description}
+	\section{Transformations of Logarithmic Functions}
+		\subsection{Transformations of Logarithmic Functions}
+			The function:
+			\[g(x) = A\log_b B(x-C)+D\]
+			is a transformation of the parent function $f(x)=\log_b x$.
+
+			Features of $g(x)$:
+			\begin{description}
+				\item[Domain if $C>0$:] $(C, +\infty)$
+				\item[Domain if $C<0$:] $(-\infty, C)$
+				\item[Range:] $\mathbb{R}$
+				\item[Vertical Asymptote:] $x=C$
+			\end{description}
+	\section{Evaluating Logarithms}
+		\subsection{Specific Logarithms}
+			The logarithm to base 10 is called the decimal or common logarithm. We use the shortcut:
+			\[\log_{10} x = \lg x\]
+			The logarithm to the base $\e$ is called the natural logarithm. We use the shortcut:
+			\[\log_{\e} x = \ln x\]
+		\subsection{Evaluating Logarithms}
+			You can use the exponential-logarithmic conversion to evaluate logarithms.
+		\subsection{Technology}
+			You can use your calculator to evaluate logarithmic functions,
+	\section{Laws of Logarithms}
+		\subsection{Power Law}
+			\[\log_b x^n = n \log_b x; \quad x > 0\]
+			\begin{proof}~
+				\\
+				Let $a = \log_b x \implies x = b^a$
+				\begin{align*}
+					 &\log_b(x^n) \\
+					=&\log_b(b^{an}) \\
+					=&an \\
+					=&n\log_b(x) \qedhere
+				\end{align*}
+			\end{proof}
+		\subsection{Product Law}
+			\[\log_b(xy) = \log_b x + \log_b y; \quad x, y > 0\]
+			\begin{proof}~
+				\\
+				Let $c = \log_b x \implies x = b^c$
+				\\
+				Let $d = \log_b y \implies y = b^d$
+				\begin{align*}
+					 &\log_b (xy) \\
+					=&\log_b (b^c \times b^d) \\
+					=&\log_b (b^{c+d}) \\
+					=&c+d \\
+					=&\log_b x + \log_b y \qedhere
+				\end{align*}
+			\end{proof}
+		\newpage
+		\subsection{Quotient Law}
+			\[\log_b \frac{x}{y} = \log_b x - \log_b y; \quad x, y > 0\]
+			\begin{proof}~
+				\\
+				Let $c = \log_b x \implies x = b^c$
+				\\
+				Let $d = \log_b y \implies y = b^d$
+				\begin{align*}
+					 &\log_b \left(\frac{x}{y}\right) \\
+					=&\log_b \left(\frac{b^c}{b^d}\right) \\
+					=&\log_b (b^{c-d}) \\
+					=&c-d \\
+					=&\log_b x - \log_b y \qedhere
+				\end{align*}
+			\end{proof}
+		\subsection{Change of Base Law}
+			\[\log_a(x) = \frac{\log_b x}{\log_b a}\]
+			\begin{proof}~
+				\\
+				Let $c = \log_b x \implies x = b^c$
+				\\
+				Let $d = \log_b a \implies a = b^d$
+				\begin{align*}
+					 &\log_a x \\
+					=&\log_{b^d} b^c \\
+					=&\log_{b^d} (b^{d \times \frac{c}{d}}) \\
+					=&\frac{c}{d} \\
+					=&\frac{\log_b x}{\log_b a} \qedhere
+				\end{align*}
+			\end{proof}
+		\subsection{Change of Base Formula for Exponential Function}
+			\[a^x = b^{x\log_b a}\]
+			\begin{proof}
+				\begin{align*}
+					\log_b a^x &= \log_b a^x \\
+					b^{\log_b a^x} &= a^x \\
+					b^{x\log_b a} &= a^{x} \qedhere
+				\end{align*}
+			\end{proof}
+	\section{Solving Exponential Equations}
+		\subsection{One-to-one Property}
+			The exponential function is a one-to-one function. So:
+			\[a^x=a^y \iff x = y\]
+			\[a > 0,\ a \neq 1 \qquad x \in \mathbb{R},\ y \in \mathbb{R}\]
+		\subsection{Change of Variable}
+			Sometimes, the change of the variable may help in solving the exponential equation. For example:
+			\[a^x=y; \quad y > 0\]
+		\subsection{Logarithms}
+			Sometimes, logarithms are needed in order to solve exponential equations.
+		\subsection{Applications}
+			Exponential equations are used for applications such as population growth and half-life.
+
+			\begin{minipage}{0.45\textwidth}
+				\subsubsection{Population Growth}
+					\[P(t) = P_0 \times \e^{kt}\]
+					Where:
+					\begin{itemize}
+						\item $P(t)$ is the population at time $t$
+						\item $P_0$ is the population at $t=0$
+						\item $\e$ is Euler's number
+						\item $k$ is the growth constant
+						\item $t$ is the time
+					\end{itemize}
+			\end{minipage}
+			\hspace{0.1\textwidth}
+			\begin{minipage}{0.45\textwidth}
+				\subsubsection{Half-Life}
+					\[P(t)=P_0\left(\frac{1}{2}\right)^{t \div k}=P_0\left(\e^{(-t \ln 2) \div k}\right)\]
+					Where:
+					\begin{itemize}
+						\item $P(t)$ is the amount at time $t$
+						\item $P_0$ is the amount at $t=0$
+						\item $\e$ is Euler's number
+						\item $k$ is the half-life
+						\item $t$ is the time
+					\end{itemize}
+			\end{minipage}
+	\section{Solving Logarithmic Equations}
+		\subsection{Exponential-Logarithmic Conversion}
+			\[b^x=y \quad \equiv \quad x=\log_b y\]
+			\[b > 0,\ b \neq 1; \quad y > 0,\ x \in \mathbb{R}\]
+		\subsection{One-to-one Property}
+			The logarithmic function is a one-to-one function. So:
+			\[\log_b x = \log_b y \iff x = y\]
+			\[b > 0,\ b \neq 1,\ x \in \mathbb{R^*},\ y \in \mathbb{R^*}\]
+		\subsection{Technology}
+			You can also use a scientific calculator to solve logarithmic equations.
+			\paragraph{Example}
+				\begin{align*}
+					\ln x + \log x &= 5\\
+					x &\doteq 32.656
+				\end{align*}
+		\subsection{Inequalities and Logarithms}
+			If $b>1$ then:
+			\[\log_b x > \log_b y \iff x > y\]
+
+			If $b<1$ then:
+			\[\log_b x > \log_b y \iff x < y\]

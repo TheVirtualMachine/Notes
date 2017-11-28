@@ -1,0 +1,65 @@
+\documentclass[letterpaper,12pt]{report}
+
+\usepackage[top=1in,bottom=1in]{geometry}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{esvect}
+\usepackage{siunitx}
+\usepackage{polynom}
+\usepackage{tasks}
+\usepackage{pgfplots}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\frenchspacing
+
+\renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
+\renewcommand\thepart{\arabic{part}}
+\renewcommand\partname{Unit}
+
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\e}{\mathrm{e}}
+
+\pgfplotsset{every axis/.append style={
+	axis x line=middle, % Make the x-axis position be the middle of the graph
+	axis y line=middle, % Make the y-axis position be the middle of the graph
+	axis line style={->}, % Arrows on one end
+	xlabel={$x$}, % Label the x-axis
+	ylabel={$y$}, % Label the y-axis
+}}
+
+\pgfplotsset{mystyle/.style={no marks, line width=0.5pt, <->}} % Style of the graph
+
+\title{MaCS Advanced Functions Exam Study Guide}
+\author{Vincent Macri}
+\date{2017 --- Semester 2}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\clearpage
+	\pagenumbering{roman}
+	\tableofcontents
+	\clearpage
+	\pagenumbering{arabic}
+
+	\part{Functions Characteristics and Properties}
+		\include{FunctionsCharacteristicsAndProperties}
+	\part{Polynomial functions}
+		\include{PolynomialFunctions}
+		\include{SolvingPolynomials}
+	\part{Rational Functions}
+		\include{RationalFunctions}
+	\part{Exponential and Logarithmic Functions}
+		\include{ExponentialAndLogarithmicFunctions}
+	\part{Calculus}
+		\include{Calculus}
+	\part{Introduction To Vectors}
+		\include{VectorIntro}
+	\part{Applications of Vectors}
+		\include{VectorApplications}
+	\appendix
+		\include{Equations}
+\end{document}
