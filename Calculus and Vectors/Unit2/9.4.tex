@@ -1,0 +1,89 @@
+\section{Intersection of Three Planes}
+\subsection{Intersection of Three Planes}
+	Consider three planes given by their Cartesian equations:
+	\[\pi_1: A_1x + B_1y + C_1z + D_1 = 0\]
+	\[\pi_2: A_2x + B_2y + C_2z + D_2 = 0\]
+	\[\pi_3: A_3x + B_3y + C_3z + D_3 = 0\]
+	The point(s) of \emph{intersection} of these planes is (are) related by to the \emph{solution(s)} of the following system of equations:
+	\begin{equation}\label{eq:9.4:system}
+		\begin{cases}
+			A_1x + B_1y + C_1z + D_1 = 0\\
+			A_2x + B_2y + C_2z + D_2 = 0\\
+			A_3x + B_3y + C_3z + D_3 = 0
+		\end{cases}
+	\end{equation}
+	There are \emph{three} equations and \emph{three} unknowns.
+	You may use \emph{substitution} or \emph{elimination} to solve this system.
+\subsection{Unique Solution (Point Intersection --- Noncoplanar Normal Vectors)}
+	In this case:
+	\[P = \pi_1 \cap \pi_2 \cap \pi_3\]
+	\begin{itemize}
+		\item The planes \emph{intersect} into a \emph{single} point.
+		\item The \emph{normal vectors} are \emph{not coplanar}: \[\vv{n_1} \cdot (\vv{n_2} \times \vv{n_3}) \neq 0\]
+		\item By solving the system \eqref{eq:9.4:system}, you get a \emph{unique solution} for $x$, $y$, and $z$.
+	\end{itemize}
+\subsection{Infinite Number of Solutions (Line Intersection --- Nonparallel Planes and Coplanar Normal Vectors)}
+	In this case:
+	\[L = \pi_1 \cap \pi_2 \cap \pi_3\]
+	\begin{itemize}
+		\item The planes are \emph{not parallel} but their normal vectors are \emph{coplanar}: \[\vv{n_1} \cdot (\vv{n_2} \times \vv{n_3}) = 0\]
+		\item The intersection is a \emph{line}.
+		\item One scalar equation is a \emph{combination} of the other two equations.
+		\item By solving the system \eqref{eq:9.4:system}, you may express two variables in terms of the third one using two equations.
+	\end{itemize}
+\subsection{Infinite Number of Solutions (Line Intersection --- Two Coincident Planes and One Intersecting Plane)}
+	In this case:
+	\[L = \pi_1 \cap \pi_2 \cap \pi_3\]
+	\begin{itemize}
+		\item \emph{Two} planes are \emph{coincident} and the third plane is \emph{not parallel} to the coincident planes.
+		\item The intersection is a \emph{line}.
+		\item Two scalar equations are \emph{equivalent}. The \emph{coefficients} $A$, $B$, $C$, and $D$ are \emph{proportional} for these two equations.
+		\item You may express two variables in terms of the third one using two nonequivalent equations.
+	\end{itemize}
+\subsection{Infinite Number of Solutions (Plane Intersection --- Three Coincident Planes)}
+	In this case:
+	\[\pi_1 \cap \pi_2 \cap \pi_3 = \pi_1 = \pi_2 = \pi_3\]
+	\begin{itemize}
+		\item The coefficients $A$, $B$, $C$, and $D$ are \emph{proportional} for all three equations.
+		\item Any point of one plane is also a point on the other two planes.
+		\item The intersection is a \emph{plane}.
+	\end{itemize}
+\subsection{No Solution (Parallel and Distinct Planes)}
+	In this case:
+	\[\pi_1 \cap \pi_2 \cap \pi_3 = \varnothing\]
+	\begin{itemize}
+		\item There are three \emph{parallel} and \emph{distinct} planes.
+		\item There is \emph{no point of intersection}.
+		\item There is \emph{no solution} for the system of equations (the system of equations is \emph{incompatible}).
+		\item The coefficients $A$, $B$, and $C$ are \emph{proportional} but the coefficients of $A$, $B$, $C$, and $D$ are \emph{not proportional}.
+		\item By solving the system \eqref{eq:9.4:system} you get \emph{false} statements (like $0 = 1$).
+	\end{itemize}
+\subsection{No Solution (H Configuration)}
+	In this case:
+	\[\pi_1 \cap \pi_2 \cap \pi_3 = \varnothing\]
+	\begin{itemize}
+		\item Two planes are \emph{parallel and distinct} and the third plane is \emph{intersecting}.
+		\item There is \emph{no point of intersection}.
+		\item The coefficients $A$, $B$, and $C$ are proportional for two planes.
+		\item There is \emph{no solution} for the system of equations (the system of equations is \emph{incompatible}).
+		\item By solving the system \eqref{eq:9.4:system} you get \emph{false} statements (like $0 = 1$).
+	\end{itemize}
+\subsection{No Solution (Three Parallel Planes but only Two Coincident Planes)}
+	In this case:
+	\[\pi_1 \cap \pi_2 \cap \pi_3 = \varnothing\]
+	\begin{itemize}
+		\item Three planes are \emph{parallel} but only two are \emph{coincident}.
+		\item The coefficients of $A$, $B$, and $C$ are \emph{proportional} for all equations but the coefficients $A$, $B$, $C$, and $D$ are \emph{proportional} only for two planes.
+		\item There is \emph{no solution} for the system of equations (the system of equations is \emph{incompatible}).
+		\item By solving the system \eqref{eq:9.4:system} you get \emph{false} statements (like $0 = 1$).
+	\end{itemize}
+\subsection{No Solution (Delta Configuration)}
+	In this case:
+	\[\pi_1 \cap \pi_2 \cap \pi_3 = \varnothing\]
+	\begin{itemize}
+		\item The planes are \emph{not parallel} (the coefficients $A$, $B$, and $C$ are not \emph{proportional}).
+		\item The normal vectors are \emph{coplanar} ($\vv{n_1} \cdot (\vv{n_2} \times \vv{n_3}) = 0$).
+		\item There is \emph{no point of intersection} between all three planes.
+		\item There is \emph{no solution} for the system of equations (the system of equations is \emph{incompatible}).
+		\item By solving the system \eqref{eq:9.4:system} you get \emph{false} statements (like $0 = 1$).
+	\end{itemize}
