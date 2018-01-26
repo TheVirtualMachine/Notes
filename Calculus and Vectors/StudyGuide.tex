@@ -2,6 +2,7 @@
 
 \usepackage{import}
 \usepackage{chngcntr}
+\usepackage{microtype}
 \usepackage[top=1in,bottom=1in]{geometry}
 \usepackage{parskip}
 \usepackage{amsmath}
@@ -15,10 +16,12 @@
 \frenchspacing
 
 \counterwithin*{section}{part}
+%\counterwithin*{equation}{section}
 
 \renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
 \renewcommand\thepart{\arabic{part}}
 \renewcommand\partname{Unit}
+\renewcommand{\theequation}{\roman{equation}}
 
 % Math notation
 \newcommand{\such}{\mid}

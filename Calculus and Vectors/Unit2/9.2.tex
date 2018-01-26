@@ -1,0 +1,56 @@
+\section{Intersection of a Line with a Plane}
+\subsection{Relative Position of a Line and a Plane}
+	There are three possible situations:
+	\begin{enumerate}
+		\item The line \emph{intersects} the plane at a single point. \[P = L \cap \pi\]
+		\item The line \emph{lies} on the plane. There are an infinite number of points of intersection. \[L = L \cap \pi\]
+		\item The line is \emph{parallel} to the plane but \emph{distinct}. There is no point of intersection. \[L \cap \pi = \varnothing\]
+	\end{enumerate}
+\subsection{Intersection of a Line and a Plane (Algebraic Method)}
+	To get the intersection between a line $L$ and a plane $\pi$:
+	\begin{enumerate}
+		\item \emph{Substitute} the parametric equations of the line
+			\begin{equation*}
+				L:
+				\begin{cases}
+					x = x_0 + tu_x\\
+					y = y_0 + tu_y\\
+					z = z_0 + tu_z
+				\end{cases}
+				t \in \real
+			\end{equation*}
+			into the Cartesian equation of the plane
+			\[\pi: Ax + By + Cz + D = 0\]
+			to get the equation:
+			\begin{equation}\label{eq:9.2:combined}
+				A(x_0 + tu_x) + B(y_0 + tu_y) + C(z_0 + tu_z) + D = 0
+			\end{equation}
+		\item \emph{Solve} (if possible) the equation \eqref{eq:9.2:combined} for the parameter $t$.
+		\item \emph{Substitute} the value of the parameter $t$ into the parametric equations of the line to get the point of intersection.
+	\end{enumerate}
+\subsection{Unique Solution (Point Intersection)}
+	In this case, by solving the equation you get a \emph{unique value} for the parameter $t$.
+	Therefore, there is a unique \emph{point of intersection} between the line and the plane.
+	\[P = L \cap \pi\]
+	The line \emph{intersects} the plane at a unique point.
+\subsection{Infinite Number of Solutions (Line Intersection)}
+	In this case, by solving the equation \eqref{eq:9.2:combined} you get the equation:
+	\[0t = 0\]
+	which has an \emph{infinite number of solutions}.
+	Therefore, there are an \emph{infinite number of points of intersection}.
+	\[L = L \cap \pi\]
+	The line \emph{lies} on the plane.
+\subsection{No Solution (No Intersection)}
+	In this case, by solving the equation \eqref{eq:9.2:combined} you get a false statement like:
+	\[0t = 1\]
+	The equation \emph{does not have any solution} and therefore there is \emph{no point of intersection} between the line and the plane.
+	\[L \cap \pi = \varnothing\]
+	The line is \emph{parallel} to the plane and \emph{does not lie} on the plane.
+\subsection{Classifying Lines}
+	Consider the line $L: \vv{r} = \vv{r_0} + t\vv{u} \such t \in \real$, where $P_0(x_0,y_0,z_0)$ is a specific point on the line, and the plane $\pi: Ax + By + Cz + D = 0$, where $\vv{n} = (A, B, C)$ is a normal vector to the plane.
+	\begin{enumerate}
+		\item If $\vv{n} \cdot \vv{u} \neq 0$ the line \emph{intersects} the plane at a unique point. \[P = L \cap \pi\]
+		\item If $\vv{n} \cdot \vv{u} = 0$ and $Ax_0 + By_0 + Cz_0 + D = 0$ then the line \emph{lies} on the plane. \[L = L \cap \pi\]
+		\item If $\vv{n} \cdot \vv{u} = 0$ and $Ax_0 + By_0 + Cz_0 + D \neq 0$ then the line is \emph{parallel} to the plane but \emph{does not lie} on the plane. \[L \cap \pi = \varnothing\]
+	\end{enumerate}
+	\textbf{Note. By solving the equation \eqref{eq:9.2:combined} for $t$ you will end by getting the same cases and conditions as above.}
