@@ -1,0 +1,32 @@
+\section{Vector and Parametric Equations of a Plane}
+\subsection{Planes}
+	A plane may be determined by points and lines.
+	There are four main possibilities:
+	\begin{enumerate}
+		\item Plane determined by three points.
+		\item Plane determined by two parallel lines.
+		\item Plane determined by two intersecting lines.
+		\item Plane determined by a point and a line.
+	\end{enumerate}
+\subsection{Vector Equation of a Plane}
+	Consider a plane $\pi$.
+
+	Two vectors $\vv{u}$ and $\vv{v}$, parallel to the plane $\pi$ but not parallel to each other, are called \emph{direction vectors} of the plane $\pi$.
+
+	The vector $\vv{P_0P}$ from a specific point $P_0(x_0,y_0,z_0)$ to a generic point $P(x,y,z)$ of the plane is a \emph{linear combination} of direction vectors $\vv{u}$ and $\vv{v}$:
+	\[\vv{P_0P} - s\vv{u} + t\vv{v} \such s, t \in \real\]
+	The \emph{vector equation} of the plane is:
+	\[\pi: \vv{r} = \vv{r_0} + s\vv{u} + t\vv{v} \such s, t \in \real\]
+\subsection{Parametric Equations of a Plane}
+	We write the vector equation of the plane as:
+	\[(x,y,z) = (x_0,y_0,z_0) + s(u_x,u_y,u_z) + t(v_x,v_y,v_z)\]
+	or:
+	\begin{equation*}
+		\begin{cases}
+			x = x_0 + su_x + tv_x\\
+			y = y_0 + su_y + tv_y\\
+			z = z_0 + su_z + tv_z
+		\end{cases}
+		s, t \in \real
+	\end{equation*}
+	These are the \emph{parametric equations} of a plane.
