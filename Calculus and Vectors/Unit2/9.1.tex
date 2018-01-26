@@ -1,0 +1,54 @@
+\section{Intersection of Two Lines} \subsection{Relative Position of Two Lines}
+	Two lines may be:
+	\begin{enumerate}
+		\item Parallel and distinct.
+		\item Parallel and coincident.
+		\item Intersecting (not parallel).
+		\item Skew (not parallel, not intersecting).
+	\end{enumerate}
+\subsection{Intersection of Two Lines (Algebraic Method)}
+	The point of intersection of two lines $L_1: \vv{r} = \vv{r_{01}} + t\vv{u_1} \such t \in \real$ and $L_2: \vv{r} = \vv{r_{02}} + s\vv{u_2} \such s \in \real$ is given by the \emph{solution} of the following system of equations (if it exists):
+	\begin{equation*}
+		\begin{cases}
+			x_{01} + tu_{x1} = x_{02} + su_{x2}\\
+			y_{01} + tu_{y1} = y_{02} + su_{y2}\\
+			z_{01} + tu_{z1} = z_{02} + su_{z2}
+		\end{cases}
+		s, t \in \real
+	\end{equation*}
+	\textbf{Hint: Solve by \emph{substitution} or \emph{elimination} the system of two equations and \emph{check} if the third is satisfied.}
+\subsection{Unique Solution}
+	If by solving the system you end by getting a \emph{unique} value for $t$ and $s$ satisfying this system, then the lines have a \emph{unique point of intersection}.
+	To get this point, substitute either the $t$ value into the line $L_1$ equation or substitute the $s$ value into the line $L_2$ equation.
+\subsection{Infinite Number of Solutions}
+	If by solving the system you end by getting two true statements (like $2=2$) and one equation in $s$ and $t$, then there exist an \emph{infinite number of solutions} of the system.
+	Therefore the lines intersect at an \emph{infinite number of points}. 
+	In this case the lines are parallel and coincident.
+\subsection{No Solution (Parallel Lines)}
+	If by solving the system you get at least one \emph{false} statement (like $0=1$) then the system has \emph{no solution}.
+	Therefore, the lines have \emph{no point of intersection}.
+	If, in addition, the lines are parallel ($\vv{u_1} \times \vv{u_2} = \vv{0}$), then the lines are \emph{parallel and distinct}.
+\subsection{No Solution (Skew Lines)}
+	If by solving the system you get at least one \emph{false} statement (like $0=1$) then the system has \emph{no solution}.
+	Therefore, the lines have \emph{no point of intersection}.
+	If, in addition, the lines are \emph{not parallel} ($\vv{u_1} \times \vv{u_2} \neq \vv{0}$), then the lines are \emph{skew}.
+\subsection{Classifying Lines (Vector Method)}
+	\begin{center}
+		\begin{forest}
+			for tree={s sep=3cm}
+			[{Parallel lines\\$\vv{u_1} \times \vv{u_2} = \vv{0}$}, align=center
+				[Parallel coincident lines, edge label={node[midway,above left]{$(\vv{r_{01}}-\vv{r_{02}}) \times \vv{u_1} = \vv{0}$}}]
+				[Parallel distinct lines, edge label={node[midway,above right]{$(\vv{r_{01}}-\vv{r_{02}}) \times \vv{u_1} \neq \vv{0}$}}]
+			]
+		\end{forest}
+
+		\vspace{1cm}
+
+		\begin{forest}
+			for tree={s sep=3cm}
+			[Nonparallel lines\\$\vv{u_1} \times \vv{u_2} \neq \vv{0}$, align=center
+				[Nonparallel intersecting lines, edge label={node[midway,above left]{$(\vv{r_{01}}-\vv{r_{02}})\cdot(\vv{u_1}\times\vv{u_2}) = 0$}}]
+				[Nonparallel skew lines, edge label={node[midway,above right]{$(\vv{r_{01}}-\vv{r_{02}})\cdot(\vv{u_1}\times\vv{u_2}) \neq 0$}}]
+			]
+		\end{forest}
+	\end{center}

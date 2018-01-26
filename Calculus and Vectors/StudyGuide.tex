@@ -1,6 +1,7 @@
 \documentclass[letterpaper,12pt]{report}
 
 \usepackage{import}
+\usepackage{chngcntr}
 \usepackage[top=1in,bottom=1in]{geometry}
 \usepackage{parskip}
 \usepackage{amsmath}
@@ -8,9 +9,12 @@
 \usepackage{amsthm}
 \usepackage{esvect}
 \usepackage{siunitx}
+\usepackage{forest}
 \usepackage[hidelinks]{hyperref}
 
 \frenchspacing
+
+\counterwithin*{section}{part}
 
 \renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
 \renewcommand\thepart{\arabic{part}}
@@ -36,6 +40,8 @@
 
 	\part{Equations of Lines and Planes}
 		\subimport{Unit1/}{Unit1}
+	\part{Relationships between Points, Lines, and Planes}
+		\subimport{Unit2/}{Unit2}
 	
 	\appendix
 	\chapter{Credit}
