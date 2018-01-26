@@ -1,0 +1,56 @@
+\section{Distance from a Point to a Line}
+\subsection{Distance from a Point to a Line in $\real^2$}
+	Let $L: Ax + By + C = 0$ be a line in $\real^2$, $P_1(x_1,y_1)$ be a \emph{generic point} on the $xy$-plane and $P_0(x_0,y_0)$ be a specific point on this line, so: $Ax_0 + By_0 + C = 0$.
+
+	The \emph{distance} $d$ between the point $P_1(x_1,y_1)$ to the line $L$ is given by (\emph{scalar projection} of $\vv{P_0P_1}$ onto the normal vector $\vv{n}$):
+	\begin{equation}\label{eq:9.5:scalarDist2}
+		d = \frac{\abs{\vv{P_0P_1} \cdot \vv{n}}}{\norm{\vv{n}}}
+	\end{equation}
+	Using $\vv{n} = (A, B)$, $\norm{\vv{n}} = \sqrt{A^2 + B^2}$ and:
+	\begin{align*}
+		\vv{P_0P_1} \cdot \vv{n} &= (x_1 - x_0, y_1 - y_0) \cdot (A, B)\\
+		                         &= A(x_1 - x_0) + B(y_1 - y_0)\\
+					 &= Ax_1 + By_1 - Ax_0 - By_0\\
+					 &= Ax_1 + By_1 + C
+	\end{align*}
+	the formula \eqref{eq:9.5:scalarDist2} may be written as:
+	\begin{equation}\label{eq:9.5:dist2}
+		d = \frac{\abs{Ax_1 + By_1 + C}}{\sqrt{A^2 + B^2}}
+	\end{equation}
+\subsection{Distance from a Point to a Line in $\real^3$}
+	Let $L: \vv{r} = \vv{r_0} + t\vv{u} \such t \in \real$ be a line defined by its vector equation and $P_0(x_0,y_0,z_0)$ be a specific point on this line.
+
+	The distance $d$ from a point $P_1(x_1,y_1,z_1)$ to the line $L$ may be found using:
+	\begin{equation}\label{eq:9.5:trigDist3}
+		d = \norm{\vv{P_0P_1}} \sin \alpha
+	\end{equation}
+	where $\alpha$ is the angle formed by the intersection of $\vv{P_0P_1}$ and $\vv{u}$.
+	
+	Because $\norm{\vv{P_0P_1} \times \vv{u}} = \norm{\vv{P_0P_1}} \norm{\vv{u}} \sin \alpha$, the formula \eqref{eq:9.5:trigDist3} can also be written as:
+	\begin{equation}\label{eq:9.5:dist3}
+		d = \frac{\norm{\vv{P_0P_1} \times \vv{u}}}{\norm{\vv{u}}}
+	\end{equation}
+	\textbf{Note: The formula \eqref{eq:9.5:dist3} may be applied also in $\real^2$ by considering the third component $z = 0$.}
+\subsection{Distance between Two Parallel Lines}
+	To find the \emph{distance} between two parallel lines:
+	\begin{enumerate}
+		\item Find a \emph{specific point} on one of these lines.
+		\item Find the distance from that specific point to the other line using one of the relations above.
+	\end{enumerate}
+\subsection{Perpendicular Line from a Point to a Line}
+	Let $L: \vv{r} = \vv{r_0} + t\vv{u} \such t \in \real$ be a line defined by its vector equation and $P(x,y,z)$ be a generic point in $\real^3$.
+
+	The line perpendicular to the line $L$ that passes through the point $P$ is called the \emph{perpendicular line} and intersects the line $L$ at a point $F$ called the \emph{foot} of the perpendicular line.
+
+	The foot $F$ of the perpendicular line may be found from the equation (because $\vv{PF} \perp \vv{u}$):
+	\[\vv{PF} \cdot \vv{u} = 0\]
+	A \emph{vector equation} of the perpendicular line is:
+	\[\vv{r} = \vv{OP} + s\vv{PF} \such s \in \real\]
+\subsection{Shortest Distance between Two Skew Lines}
+	Two skew lines lie into \emph{two parallel planes}.
+	The vector $\vv{u_1} \times \vv{u_2}$ is \emph{perpendicular} to both lines and therefore perpendicular to parallel planes the lines lie on.
+
+	The \emph{shortest distance} between two skew lines $L_1: \vv{r} = \vv{r_{01}} + t\vv{u_1} \such t \in \real$ and $L_2: \vv{r} = \vv{r_{02}} + s\vv{u_2} \such s \in \real$ is given by the \emph{scalar projection} of the vector $\vv{r_{01}} - \vv{r_{02}}$ onto the vector $\vv{u_1} \times \vv{u_2}$:
+	\begin{equation}\label{eq:9.5:shortestSkewDist}
+		d = \frac{\abs{ ( \vv{r_{01}} - \vv{r_{02}}) \cdot (\vv{u_1} \times \vv{u_2})}}{\norm{\vv{u_1} \times \vv{u_2}}}
+	\end{equation}
