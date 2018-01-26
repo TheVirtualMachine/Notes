@@ -1,0 +1,58 @@
+\section{Vector and Parametric Equations of a Line in $\real^2$}
+\subsection{Vector Equation of a Line in $\real^2$}
+	Consider the line $L$ that passes through the point $P_0 (x_0, y_0)$ and is parallel to the vector $\vv{u}$.
+	The point $P(x,y)$ is a \emph{generic point} on the line.
+
+	\[\vv{P_0P} = t\vv{u}\]
+	\[\vv{OP} - \vv{OP_0} = t\vv{u}\]
+	\[\vv{r} - \vv{r_0} = t\vv{u}\]
+
+	The \emph{vector equation} of the line is:
+	\[\vv{r} = \vv{r_0} + t\vv{u} \such t \in \real\]
+	Where:
+	\begin{itemize}
+		\item $\vv{r} = \vv{OP}$ is the \emph{position vector} of a \emph{generic point} $P$ on the line.
+		\item $\vv{r_0} = \vv{OP_0}$ is the \emph{position vector} of a \emph{specific point} $P_0$ on the line.
+		\item $\vv{u}$ is a vector parallel to the line called the \emph{direction vector} of the line.
+		\item $t$ is a \emph{real number} corresponding to the generic point $P$.
+	\end{itemize}
+	\textbf{Note: The vector equation of a line is \emph{not unique}.
+	It depends on the specific point $P_0$ and on the direction vector $\vv{u}$ that are used.}
+\subsection{Parametric Equations of a Line in $\real^2$}
+	We can rewrite the vector equation of a line:
+	\[\vv{r} = \vv{r_0} + t\vv{u} \such t \in \real\]
+	as:
+	\[(x, y) = (x_0, y_0) + t(u_x, u_y) \such t \in \real\]
+	Split this vector equation into the \emph{parametric equations} of a line in $\real^2$:
+	\begin{equation*}
+		\begin{cases}
+			x = x_0 + tu_x\\
+			y = y_0 + yu_y
+		\end{cases}
+		t \in \real
+	\end{equation*}
+\subsection{Parallel Lines}
+	Two lines $L_1$ and $L_2$ with direction vectors $\vv{u_1}$ and $\vv{u_2}$ are \emph{parallel} ($L_1 \parallel L_2$) if:
+	\[\vv{u_1} \parallel \vv{u_2}\]
+	or, there exists $k \in \real$ such that:
+	\[\vv{u_2} = k\vv{u_1}\]
+	or:
+	\[\vv{u_1} \times \vv{u_2} = \vv{0}\]
+	or scalar components are \emph{proportional}:
+	\[\frac{u_{2x}}{u_{1x}} = \frac{u_{2u}}{u_{1u}} = k\]
+\subsection{Perpendicular Lines}
+	Two lines $L_1$ and $L_2$ with direction vectors $\vv{u_1}$ and $\vv{u_2}$ are \emph{perpendicular} ($L_1 \perp L_2$) if:
+	\[\vv{u_1} \perp \vv{u_2}\]
+	or:
+	\[\vv{u_1} \cdot \vv{u_2} = 0\]
+	or:
+	\[u_{1x}u_{2x} + u_{1y}u_{2y} = 0\]
+\subsection{2D Perpendicular Vectors}
+	Given a 2D vector $\vv{u} = (a, b)$, two 2D vectors perpendicular to $\vv{u}$ are $\vv{v} = (-b, a)$ and $\vv{w} = (b, -a)$.
+
+	Indeed:
+	\[\vv{u} \cdot \vv{v} = (a, b) \cdot (-b, a) = -ab + ab = 0 \implies \vv{u} \perp \vv{v}\]
+\subsection{Special Lines}
+	A line \emph{parallel} to the $x$-axis has a direction vector in the form $\vv{u} = (u_x, 0) \such u_x \neq 0$.
+
+	A line \emph{parallel} to the $y$-axis has a direction vector in the form $\vv{u} = (0, u_y) \such u_y \neq 0$.

@@ -1,0 +1,43 @@
+\documentclass[letterpaper,12pt]{report}
+
+\usepackage{import}
+\usepackage[top=1in,bottom=1in]{geometry}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{esvect}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+
+\frenchspacing
+
+\renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
+\renewcommand\thepart{\arabic{part}}
+\renewcommand\partname{Unit}
+
+% Math notation
+\newcommand{\such}{\mid}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+
+\title{MaCS Calculus and Vectors Exam Study Guide}
+\author{Vincent Macri}
+\date{2017 -- 2018 --- Semester 1}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\clearpage
+	\pagenumbering{roman}
+	\tableofcontents
+	\clearpage
+	\pagenumbering{arabic}
+
+	\part{Equations of Lines and Planes}
+		\subimport{Unit1/}{Unit1}
+	
+	\appendix
+	\chapter{Credit}
+	Thank you for everything, Mrs. Gugoiu.
+\end{document}

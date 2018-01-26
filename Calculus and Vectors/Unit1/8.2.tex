@@ -1,0 +1,56 @@
+\section{Cartesian Equation of a Line}
+\subsection{Symmetric Equation}
+	The parametric equations of a line in $\real^2$:
+	\begin{equation*}
+		\begin{cases}
+			x = x_0 + tu_x\\
+			y = y_0 + tu_y
+		\end{cases}
+		t \in \real
+	\end{equation*}
+	may be written as:
+	\[\frac{x - x_0}{u_x} = \frac{y - y_0}{u_y} = t \such t \in \real\]
+	The \emph{symmetric equation} of the line is (if it exists):
+	\[\frac{x - x_0}{u_x} = \frac{y - y_0}{u_y}\]
+	\textbf{Note: The symmetric equations only exists if $u_x \neq 0$ and $u_y \neq 0$.}
+\subsection{Normal Equation}
+	Consider a line $L$ that passes through the specific point $P_0(x_0, y_0)$ and has the \emph{direction vector} $\vv{u} = (u_x, u_y)$.
+	
+	The vectors $\vv{n} = (-u_y, u_x) = (A, B)$ or $\vv{n} = (u_y, -u_x) = (A, B)$ are perpendicular to the vector $\vv{u}$ and so they are perpendicular to the line $L$.
+	These are called \emph{normal vectors} to the line $L$.
+
+	Let $P(x, y)$ be a generic point on the line $L$. So:
+	\[\vv{P_0P} \parallel \vv{u} \implies \vv{P_0P} \perp \vv{n} \implies \vv{P_0P} \cdot \vv{n} = 0\]
+	\[(\vv{r} - \vv{r_0}) \cdot \vv{n} = 0\]
+	The \emph{normal equation} of a line is given by:
+	\[(\vv{r} - \vv{r_0}) \cdot \vv{n} = 0\]
+\subsection{Cartesian Equation}
+	The normal equations can be written as:
+	\begin{align*}
+		\vv{r} \cdot \vv{n} - \vv{r_0} \cdot \vv{n} &= 0\\
+		(x,y) \cdot (A,B) - (x_0,y_0) \cdot (A,B) &= 0\\
+		Ax + By - Ax_0 - By_0 &= 0\\
+		Ax + By + C &= 0 \qquad \text{where } C = -Ax_0 - By_0
+	\end{align*}
+	The \emph{Cartesian equation} of a line is given by:
+	\[Ax + By + C = 0\]
+	where
+	$\vv{n} = (A,B)$ is a \emph{normal vector} and the constant $C$ depends on a specific point of the line.
+\subsection{Slope $\boldsymbol{y}$-intercept Equation}
+	Solve the symmetric equation of a line:
+	\[\frac{x - x_0}{u_x} = \frac{y - y_0}{u_y} \such t \in \real\]
+	for $y$:
+	\begin{align*}
+		y - y_0 &= u_y \frac{x - x_0}{u_x}\\
+		y &= \frac{u_y}{u_x}x + y_0 - \frac{u_y}{u_x}x_0
+	\end{align*}
+	The \emph{slope $y$-intercept equation} of a line in $\real^2$ is given by:
+	\[y = mx + b\]
+	\[m = \frac{u_y}{u_x}\]
+	where $m$ is the \emph{slope} and  $b$ is the \emph{$y$-intercept} which depends on a specific point of the line.
+\subsection{Angle Between two Lines}
+	The \emph{angle} between two lines is determined by the angle between the \emph{direction vectors}:
+	\[\cos \theta = \frac{\vv{u_1} \cdot \vv{u_2}}{\norm{\vv{u_1}} \norm{\vv{u_2}}}\]
+	\textbf{Note: There are two pairs of equal angles between the two lines.
+	There is a pair of the angle $\theta_1$, and a pair of the angle $\theta_2$.
+	$\theta_1 + \theta_2 = \SI{180}{\degree}$}
