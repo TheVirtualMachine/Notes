@@ -1,0 +1,57 @@
+\section{Intersection of Two Planes}
+\subsection{Relative Position of Two Planes}
+	Two planes may be:
+	\begin{enumerate}
+		\item Intersecting (into a line) \[L = \pi_1 \cap \pi_2\]
+		\item Coincident \[\pi_1 = \pi_1 \cap \pi_2 = \pi_2\]
+		\item Distinct \[\pi_1 \cap \pi_2 = \varnothing\]
+	\end{enumerate}
+\subsection{Intersection of Two Planes}
+	Consider two planes given by their Cartesian equations:
+	\[\pi_1 = A_1x + B_1y + C_1z + D_1 = 0\]
+	\[\pi_2 = A_2x + B_2y + C_2z + D_2 = 0\]
+	To find the point(s) of intersection between two planes, \emph{solve} the system of equations formed by their Cartesian equations:
+	\begin{equation}\label{eq:9.3:system}
+		\begin{cases}
+			\pi_1 = A_1x + B_1y + C_1z + D_1 = 0
+			\pi_2 = A_2x + B_2y + C_2z + D_2 = 0
+		\end{cases}
+	\end{equation}
+	There are \emph{two} equations and \emph{three} unknowns.
+	\textbf{Notes:}
+	\begin{enumerate}
+		\item A normal vector to the plane $\pi_1$ is $\vv{n_1} = (A_1, B_1, C_1)$ and a normal vector to the plane $\pi_2$ is $\vv{n_2} = (A_2, B_2, C_2)$.
+		\item If the planes are \emph{parallel} then the coefficients $A$, $B$, and $C$ are \emph{proportional}.
+		\item If the planes are \emph{coincident} then the coefficients $A$, $B$, $C$, and $D$ are \emph{proportional}.
+		\item A system of equations is called \emph{compatible} if there is \emph{at least} one solution. A system of equations is called \emph{incompatible} if there is \emph{no solution}.
+	\end{enumerate}
+\subsection{Nonparallel Planes (Line Intersection)}
+	In this case:
+	\[L = \pi_1 \cap \pi_2\]
+	\begin{itemize}
+		\item The coefficients $A$, $B$, and $C$ in the scalar equations are \emph{not proportional}.
+		\item The normal vectors are \emph{not parallel}: $\vv{n_1} \times \vv{n_2} \neq \vv{0}$.
+		\item By solving the system \eqref{eq:9.3:system} you will be able to find two variables in terms of the third variable.
+		\item There are an \emph{infinite number of solutions} and therefore an \emph{infinite number of points of intersection}.
+		\item The intersection is a \emph{line} and a \emph{direction vector} for this line is $\vv{u} = \vv{n_1} \times \vv{n_2}$.
+	\end{itemize}
+\subsection{Coincident Planes (Plane Intersection)}
+	In this case:
+	\[\pi_1 = \pi_1 \cap \pi_2 = \pi_2\]
+	\begin{itemize}
+		\item The planes are \emph{parallel} and \emph{coincident}.
+		\item The coefficients $A$, $B$, $C$, and $D$ in the scalar equations are \emph{proportional}.
+		\item One equation in the system \eqref{eq:9.3:system} is a \emph{multiple} of the other equation and does not contain additional information (the equations are equivalent).
+		\item By solving the system of equations \eqref{eq:9.3:system}, you get a \emph{true} statement (like $0 = 0$).
+		\item There are an \emph{infinite number of solutions} and therefore an \emph{infinite number of points of intersection}.
+		\item The intersection is a \emph{plane}.
+	\end{itemize}
+\subsection{Parallel and Distinct Planes (No Intersection)}
+	In this case:
+	\[\pi_1 \cap \pi_2 = \varnothing\]
+	\begin{itemize}
+		\item The planes are \emph{parallel} and \emph{distinct}.
+		\item The coefficients $A$, $B$, and $C$ in the scalar equations are \emph{proportional} but the coefficients $A$, $B$, $C$, and $D$ are \emph{not proportional}.
+		\item By solving the system \eqref{eq:9.3:system} you get a \emph{false} statement (like $0 = 1$).
+		\item There is \emph{no solution} and therefore \emph{no point of intersection} between the two planes.
+	\end{itemize}
