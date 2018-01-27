@@ -1,0 +1,24 @@
+\section{Distance from a Point to a Plane}
+\subsection{Distance from a Point to a Plane (I)}
+	Consider a plane $\pi$ with a \emph{normal vector} $\vv{n}$ and a point $P_0(x_0,y_0,z_0)$ on this plane. The \emph{distance} from a point $P_1(x_1,y_1,z_1)$ to the plane $\pi$ is given by the \emph{scalar projection} of the vector $\vv{P_0P_1}$ onto the normal vector $\vv{n}$:
+	\begin{equation}\label{eq:9.6:scalarPointPlaneDist}
+		d = \frac{\abs{\vv{P_0P_1} \cdot \vv{n}}}{\norm{\vv{n}}}
+	\end{equation}
+\subsection{Distance from a Point to a Plane (II)}
+	If the plane $\pi$ is given by the \emph{Cartesian equation} $\pi: Ax + By + Cz + D = 0$, then the \emph{distance} from a point $P_1(x_1,y_1,z_1)$ to the plane is given by:
+	\begin{equation}\label{eq:9.6:pointPlaneDist}
+		d = \frac{\abs{Ax_1 + By_1 + C_z + D}}{\sqrt{A^2 + B^2 + C^2}}
+	\end{equation}
+	Indeed,
+	\[P_0 \in \pi \implies Ax_0 + By_0 + Cz_0 + D = 0\]
+	\begin{align*}
+		\vv{P_0P_1} \cdot \vv{n} &= (x_1 - x_0, y_1 - y_0, z_1 - z_0) \cdot (A, B, C)\\
+		                         &= Ax_1 + By_1 + Cz_1 - Ax_0 - By_0 - Cz_0\\
+					 &= Ax_1 + By_1 + Cz_1 + D
+	\end{align*}
+\subsection{Distance between Two Parallel Planes}
+	To get the \emph{distance} between \emph{two parallel planes}:
+	\begin{enumerate}
+		\item Find a specific point into one of these planes.
+		\item Find the distance between that specific point and the other plane using one of the formulas above.
+	\end{enumerate}
