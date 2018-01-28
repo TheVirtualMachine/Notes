@@ -1,0 +1,23 @@
+\tocsec{Related Rates}
+\subsection{Algorithm to Solve Related Rates Applications}
+	\begin{enumerate}
+		\item Assign variables $x$, $y$, $z$, \dots to quantities involved in application.
+		\item Discover relations (constraints) between these quantities and write down their restrictions. A diagram or geometry formulas may help.
+		\item Use these relations to eliminate variables which are not essential to application.
+			At this step, related variables are part of an explicit equation:
+			\begin{equation}\label{eq:RelatedRates:explicit}
+				x = f(y,z,\dots)
+			\end{equation}
+			or are part of an implicit equation:
+			\begin{equation}\label{eq:RelatedRates:implicit}
+				f(y,z,\dots) = 0
+			\end{equation}
+		\item Identify the independent quantity and assign a variable to it (usually this is the time $t$).
+		\item Use the chain rule to differentiate with respect to the independent variable $t$ the equation \eqref{eq:RelatedRates:explicit} or \eqref{eq:RelatedRates:implicit}:
+			\begin{equation}\label{eq:RelatedRates:final}
+				\od{x}{t} = \od{}{t} f(y,z,\dots) \quad \text{or} \quad \od{}{t}f(y,z,\dots) = 0
+			\end{equation}
+		\item Substitute all given data or other data obtained from \eqref{eq:RelatedRates:explicit} or \eqref{eq:RelatedRates:implicit} equations.
+		\item Solve for the remaining unknown rate of change.
+	\end{enumerate}
+	\textbf{Note. $\od{x}{y}$, $\od{y}{t}$, \dots are instantaneous rates of change are they are related by \eqref{eq:RelatedRates:final}.}
