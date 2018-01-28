@@ -1,0 +1,51 @@
+\section{Derivative of Trigonometric Functions}
+\subsection{Review of Trigonometric Functions}\label{subsec:5.4:trig}
+	\[\sin(x) \from \real \to [-1,1]\]
+	\[\cos(x) \from \real \to [-1,1]\]
+	\[\tan(x) \from \left\{\real \setminus \left\{\frac{\pi}{2} + n\pi \such n \in \integer\right\}\right\} \to \real\]
+
+	\[\sin(x + 2\pi) = \sin(x)\]
+	\[\cos(x + 2\pi) = \cos(x)\]
+
+	\[\sin^2(x) + \cos^2(x) = 1\]
+
+	\[\sin(a + b) = \sin(a)\cos(b) + \cos(a)\sin(b)\]
+	\[\cos(a + b) = \cos(a)\cos(b) - \sin(a)\sin(b)\]
+
+	\[\sin\left(x + \frac{\pi}{2}\right) = \cos(x)\]
+	\[\sin(2x) = 2\sin(x)\cos(x)\]
+	\[\cos(2x) = \cos^2(x) - \sin^2(x)\]
+	\[\tan(x) = \frac{\sin(x)}{\cos(x)}\]
+
+	\begin{equation}\label{eq:5.4:sinLim}
+		\lim_{x \to 0} \frac{\sin x}{x} = 1
+	\end{equation}
+	\begin{equation}\label{eq:5.4:cosLim}
+		\lim_{x \to 0} \frac{\cos x - 1}{x} = 0
+	\end{equation}
+\subsection{Derivative of $\sin(x)$}
+	\[(\sin x)' = \cos x\]
+	\[\od{}{x}\sin x = \cos x\]
+	\begin{proof}
+		\begin{align*}
+			(\sin x)' &= \lim_{h \to 0} \frac{\sin(x+h) - \sin(x)}{h}\\
+			(\sin x)' &= \lim_{h \to 0} \frac{\sin(x)\cos(h) + \cos(x)\sin(h) - \sin(x)}{h}\\
+			(\sin x)' &= \lim_{h \to 0} \frac{\sin(x)\cos(h) - \sin(x)}{h} + \lim_{h \to 0} \frac{\cos(x)\sin(h)}{h}\\
+			(\sin x)' &= \sin(x) \lim_{h \to 0}\frac{\cos(h) - 1}{h} + \cos(x)\lim_{h \to 0}\frac{\sin(h)}{h}
+		\end{align*}
+		Now, using the limits \eqref{eq:5.4:sinLim} and \eqref{eq:5.4:cosLim}:
+		\begin{align*}
+			(\sin x)' &= sin(x) \times 0 + \cos(x) \times 1\\
+			(\sin x)' &= \cos(x)
+		\end{align*}
+	\end{proof}
+\subsection{Derivative of $\sin\left(f(x)\right)$}
+	By using the chain rule:
+	\[\left( \sin\left( f(x) \right)\right)' = \left(\cos\left( f(x) \right)\right)f'(x)\]
+\subsection{Derivative of $\cos x$}
+	\[(\cos x)' = -\sin x\]
+\subsection{Derivative of $\cos \left( f(x) \right)$}
+	By using the chain rule:
+	\[\left( \cos \left( f(x) \right) \right)' = -\left(\sin \left( f(x) \right) \right) f'(x)\]
+\subsection{Derivative of $\tan x$}
+	\[(\tan x)' = \frac{1}{\cos^2 x} = \sec^2 x\]

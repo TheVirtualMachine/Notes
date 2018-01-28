@@ -13,20 +13,23 @@
 \usepackage{esvect}
 \usepackage{siunitx}
 \usepackage{forest}
-\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
 
+% Formatting.
 \frenchspacing
-
+\newcommand{\sectionbreak}{\clearpage}
 \counterwithin*{section}{part}
-
 \renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
 \renewcommand\thepart{\arabic{part}}
 \renewcommand\partname{Unit}
 \renewcommand{\theequation}{\roman{equation}}
 
-% Math notation
+% Math notation.
 \newcommand{\such}{\mid}
 \newcommand{\real}{\mathbb{R}}
+\newcommand{\integer}{\mathbb{Z}}
+\newcommand{\from}{\colon}
 
 \title{MaCS Calculus and Vectors Exam Study Guide}
 \author{Vincent Macri}
@@ -42,13 +45,13 @@
 	\pagenumbering{arabic}
 
 	\part{Equations of Lines and Planes}
-		\subimport{Unit1/}{Unit1}
+		\subimport*{Unit1/}{Unit1}
 	\part{Relationships between Points, Lines, and Planes}
-		\subimport{Unit2/}{Unit2}
+		\subimport*{Unit2/}{Unit2}
 	\part*{AP Preparation Differentiability Review}
 		\addcontentsline{toc}{part}{AP Preparation Differentiability Review}
 		\setcounter{section}{3}
-		\subimport{DifferentiabilityReview/}{DifferentiabilityReview}
+		\subimport*{DifferentiabilityReview/}{DifferentiabilityReview}
 	
 	\appendix
 	\chapter{Credit}
