@@ -1,0 +1,35 @@
+\section{Linear Approximation and Differentials}
+\subsection{Linear Approximation}
+	The definition of derivative function at $x=a$:
+	\[f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x-a}\]
+	may be written:
+	\[f(x) \approx f(a) + f'(a)(x-a)\ ,\ x \to a\]
+	which is called the \emph{linear or tangent line approximation} of the function $y=f(x)$ near $x=a$.
+	\textbf{Note. Linear approximation is only possible if $f'(a)$ exists.}
+\subsection{Approximate Formulas}
+	The definition of derivative function at $x=a$:
+	\[f'(a) = \lim_{x \to 0} \frac{f(a+x) - f(a)}{x}\]
+	written in the form:
+	\[f(a+x) \approx f(a) + f'(a)x\ ,\ x \to 0\]
+	permits generation of \emph{approximate formulas}.
+\subsection{Numerical Approximation}
+	Numerical approximation is based on the formula:
+	\[f(a+x) \approx f(a) + f'(a)x\ ,\ x \to 0\]
+\subsection{Differentials}
+	Derivative function may be written in the form:
+	\[\od{y}{x} = f'(x)\]
+	$\dif x$ and $\dif y$ are called \emph{differentials} and they are related by the formula:
+	\[\dif y = f'(x) \dif x\]
+	This formula is called the \emph{differential form} of the function $y = f(x)$.
+
+	If $\dif x, \dif y \to 0$ then the previous formula is exact.
+
+	If $\dif x$ and $\dif y$ are finite, we replace them by $\Delta x$ and $\Delta y$ and the previous formula becomes approximately:
+	\[\Delta y \approx f'(x) \Delta x\]
+\subsection{Error Propagation}
+	If the variable $x$ is measured with a finite error $\Delta x$, then the real value is $x + \Delta x$.
+
+	The \emph{absolute error} in computing the value of the function $y = f(x)$ is approximately given by:
+	\[\Delta y \approx f'(x)\Delta x\]
+	and its \emph{relative error} $\frac{\Delta y}{y}$ may be approximated by:
+	\[\frac{\Delta y}{y} = \frac{\Delta y}{f(x)} \approx \frac{f'(x)\Delta x}{f(x)}\]
