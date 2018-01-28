@@ -1,0 +1,42 @@
+\setcounter{section}{5}
+\section{Continuity}
+\subsection{Continuity}
+	A function $y=f(x)$ is continuous at a number $x=a$ if \[L = R = f(a)\]
+	where:
+
+	$\displaystyle L = \lim_{x \to a^-} f(x)$ is the left-hand limit at $x=a$.
+
+	$\displaystyle R = \lim_{x \to a^+} f(x)$ is the right-hand limit at $x=a$.
+
+	$f(a)$ is the value of the function at $x=a$.
+	
+	\textbf{Note: A function is continuous if it can be drawn without lifting your pencil from the paper.}
+\subsection{Discontinuity}
+	If $y=f(x)$ is not continuous at $x=a$ then we say:
+	``$y=f(x)$ is discontinuous at $x=a$''
+	or
+	``$y=f(x)$ has a discontinuity at $x=a$''.
+\subsection{Removable Discontinuity}
+	A function $y=f(x)$ has a removable discontinuity at $x=a$ if:
+	\begin{enumerate}
+		\item $\displaystyle L=R=\lim_{x \to a} f(x)$ exists
+		\item $f(a)$ DNE or $\displaystyle \lim_{x \to a}f(x) \neq f(a)$
+	\end{enumerate}
+	\textbf{Note: A removable discontinuity can be removed be redefining the function $x=a$ as $\displaystyle f(a) \stackrel{def}{=} \lim_{x \to a} f(x)$.}
+\subsection{Jump Discontinuity}
+	A function $y=f(x)$ has a jump discontinuity at $x=a$ if:
+	\[L = \lim_{x \to a^-} f(x) \neq \lim_{x \to a^+} f(x) = R\]
+\subsection{Infinite Discontinuity}
+	A function $y=f(x)$ has an infinite discontinuity at $x=a$ if at least one side of the limit is unbounded (approaches $\infty$ or $-\infty$).
+\subsection{Continuity over an Interval (AP only)}
+	A function $y=f(x)$ is continuous over an open interval $(a,b)$ if the function is continuous at every number in that interval.
+
+	A function is continuous from the right at $x=a$ if $R=f(a)$.
+
+	A function is continuous from the left at $x=a$ if $L=f(a)$.
+\subsection{Elementary Functions (AP only)}
+	Elementary functions (polynomial, power, rational, trigonometric, exponential, and logarithmic) are continuous over their domain.
+\subsection{Composition of Functions}
+	If $g$ is continuous at $x=a$ and $f$ is continuous at $g(a)$ then $f(g(x))$ is continuous at $x=a$.
+\subsection{Intermediate Value Theorem (AP only)}
+	If $y=f(x)$ is a continuous function over the interval $[a,b]$ with $f(a) \neq f(b)$, then for any number $N$ between $f(a)$ and $f(b)$ there exist a number $c \in (a,b)$ such that $f(c) = N$.
