@@ -21,10 +21,13 @@
 \newcommand{\sectionbreak}{\clearpage}
 \counterwithin*{section}{part}
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
-\renewcommand\thesubsection{\arabic{chapter}.\arabic{section} \Alph{subsection}}
+\renewcommand\thesubsection{\Alph{subsection}}
 \renewcommand\thepart{\arabic{part}}
 \renewcommand\partname{Unit}
 \renewcommand{\theequation}{\roman{equation}}
+
+% More commands
+\newcommand{\tocsec}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}\setcounter{subsection}{0}}
 
 % Math notation.
 \newcommand{\such}{\mid}
@@ -55,6 +58,8 @@
 	\part*{AP Preparation Differentiability Review}
 		\addcontentsline{toc}{part}{AP Preparation Differentiability Review}
 		\subimport*{DifferentiabilityReview/}{DifferentiabilityReview}
+	\part{Applications of Differentiation}
+		\subimport*{Unit3/}{Unit3}
 	
 	%\appendix
 	%\chapter{Credit}

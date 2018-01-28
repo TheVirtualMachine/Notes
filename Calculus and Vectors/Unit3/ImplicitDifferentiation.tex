@@ -1,0 +1,42 @@
+\tocsec{Implicit Differentiation (AP)}
+\subsection{Relations Defined Implicitly}
+	A relation between two variables $x$ and $y$ is defined implicitly by an equation like:
+	\[f(x,y) = 0\]
+	\textbf{Notes:}
+	\begin{enumerate}
+		\item One variable may be considered dependant on the other variable or both may be considered dependant on the third one like $t$.
+		\item The equation may be solved with respect to the variables $x$ or $y$ or may not be solved.
+		\item The graph of the relation may or may not pass the vertical or horizontal line tests.
+	\end{enumerate}
+\subsection{Terminology}
+	Let $(x,y)$ and $(x + \Delta x, y + \Delta y)$ be two points satisfying $f(x,y) = 0$. Then:
+	\[\frac{\Delta y}{\Delta x} = \frac{1}{\frac{\Delta x}{\Delta y}}\]
+	And as $\Delta x \to 0$, $\Delta y \to 0$:
+	\[\od{y}{x} = \frac{1}{\od{x}{y}}\]
+	\textbf{Notes:}
+	\begin{itemize}
+		\item $\od{y}{x}$ means differentiation of the variable $y$ with respect to the variable $x$.
+		\item $\od{x}{y}$ means differentiation of the variables $x$ with respect to the variable $y$.
+		\item The tangent line is horizontal when $\od{y}{x} = 0$.
+		\item The tangent line is vertical when $\od{x}{y} = 0$.
+	\end{itemize}
+\subsection{Differentiation Revised}
+	Consider the expression $E(x,y) = 2xy^2$.
+
+	If $x$ is considered independent:
+	\[\od{}{x}E(x,y) = \od{}{x}(2xy^2) = y^2 \od{}{x}(2x) + (2x) \od{}{x}y^2 = 2y^2 \od{x}{x} + 4xy\od{y}{x} = 2y^2 + 4xy\od{y}{x}\]
+	If $y$ is considered independent:
+	\[\od{}{x}E(x,y) = \od{}{y}(2xy^2) = y^2 \od{}{y}(2x) + (2x) \od{}{y}y^2 = 2y^2 \od{x}{y} + 4xy\od{y}{y} = 2y^2\od{x}{y} + 4xy\]
+	If $t$ is considered independent:
+	\[\od{}{x}E(x,y) = \od{}{t}(2xy^2) = y^2 \od{}{t}(2x) + (2x) \od{}{t}y^2 = 2y^2 \od{x}{t} + 4xy\od{y}{t}\]
+\subsection{Implicit Differentiation}
+	To differentiation with respect to the variable $x$ in a relation given implicitly by $f(x,y) = 0$:
+	\begin{enumerate}
+		\item Apply the operator $\od{}{x}$ to both sides: \[\od{}{x} f(x,y) = \od{}{x} 0\]
+		\item Use the chain rule and differentiate by keeping in mind that $\od{x}{x} = 1$.
+		\item Solve for $\od{y}{x} = IRC = m_T$ or $\od{x}{y} = \frac{1}{\od{y}{x}}$.
+		\item Substitute $x$ and $y$ with given values (if necessary).
+	\end{enumerate}
+	\textbf{Note: The following differentiations are also possible:}
+	\[\od{}{y} f(x,y) = \od{}{y}0\]
+	\[\od{}{t} f(x,y) = \od{}{t}0\]
