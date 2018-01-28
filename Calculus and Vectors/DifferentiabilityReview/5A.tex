@@ -1,0 +1,28 @@
+\section{Derivative of Logarithmic Function}
+\subsection{Review of Logarithmic Function}
+	\[y = b^x \equiv x=\log_b y\]
+	\[y=f(x)=\log_b x \such b > 0 \land b \neq 1 \land x > 0\]
+	\[\log_b(xy) = \log_b(x) + \log_b(y)\]
+	\[\log_b \left(\frac{x}{y}\right) = \log_b(x) - \log_b(y)\]
+	\[\log_b x^n = n\log_b x\]
+	\[\log_b x = \frac{\log_a x}{\log_a b}\]
+	\[\log_b 1 = 0\]
+	\[\log_b b = 1\]
+\subsection{Derivative of $\ln x$}
+	\[(\ln x)' = \frac{1}{x}\]
+	\begin{proof}
+		\[y = \ln x \implies x = e^y \implies x' = (e^y)'\]
+		\[x' = (e^y)' \implies 1 = e^yy' \implies y' = \frac{1}{e^y} \implies y'=\frac{1}{x}\]
+		\[\therefore (\ln x)' = \frac{1}{x}\]
+	\end{proof}
+\subsection{Derivative of $\ln(f(x))$}
+	By using the chain rule:
+	\[\left( \ln f(x) \right)' = \frac{f'(x)}{f(x)}\]
+\subsection{Derivative of $\log_b x$}
+	\[( \log_b x )' = \frac{1}{(\ln b)x}\]
+	\begin{proof}
+		\[(\log_b x)' = \left( \frac{\ln x}{\ln b} \right)' = \frac{1}{\ln b}(\ln x)' = \frac{1}{(\ln b) x}\]
+	\end{proof}
+\subsection{Derivative of $\log_b f(x)$}
+	By using the chain rule:
+	\[\left( \log_b \left( f(x) \right)\right)' = \frac{f'(x)}{(\ln b)f(x)}\]

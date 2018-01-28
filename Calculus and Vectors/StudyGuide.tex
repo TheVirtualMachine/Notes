@@ -21,7 +21,7 @@
 \newcommand{\sectionbreak}{\clearpage}
 \counterwithin*{section}{part}
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
-\renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
+\renewcommand\thesubsection{\arabic{chapter}.\arabic{section} \Alph{subsection}}
 \renewcommand\thepart{\arabic{part}}
 \renewcommand\partname{Unit}
 \renewcommand{\theequation}{\roman{equation}}
@@ -51,7 +51,6 @@
 		\subimport*{Unit2/}{Unit2}
 	\part*{AP Preparation Differentiability Review}
 		\addcontentsline{toc}{part}{AP Preparation Differentiability Review}
-		\setcounter{section}{3}
 		\subimport*{DifferentiabilityReview/}{DifferentiabilityReview}
 	
 	%\appendix

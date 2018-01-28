@@ -1,4 +1,5 @@
 \setcounter{chapter}{1}
+\setcounter{section}{3}
 \input{1.4}
 \setcounter{section}{5}
 \input{1.6}
@@ -14,3 +15,9 @@
 \input{5.4}
 \setcounter{section}{0}
 \input{5.1}
+\setcounter{section}{0}
+\renewcommand\thesection{\arabic{chapter}\Alph{section}}
+\renewcommand\thesubsection{\arabic{chapter}\Alph{section} \Alph{subsection}}
+\input{5A}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
+\renewcommand\thesubsection{\arabic{chapter}.\arabic{section} \Alph{subsection}}
