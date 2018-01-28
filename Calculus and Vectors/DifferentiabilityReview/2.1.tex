@@ -1,0 +1,56 @@
+\section{Derivative Function}
+\subsection{Derivative Function}
+	Given a function $y=f(x)$, the \emph{derivative function} of $f$ is a \emph{new function} called $f'$ ($f$ prime), defined at $x$ by:
+	\[f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\]
+	A function $y=f(x)$ is \emph{differentiable} at $x$ if $f'(x)$ exists.
+\subsection{Differentiability (AP only)}
+	A function $y=f(x)$ is differentiable over an open interval $(a,b)$ if the function is differentiable at every number in that interval.
+
+	The domain of derivative function $f'(x)$ is a subset of the domain of the original function $f$ ($D_{f'} \subseteq D_f$).
+	So a function is defined over $D_f$ but is differentiable over $D_{f'}$.
+\subsection{Interpretations of Derivative Function}
+	\begin{enumerate}
+		\item The \emph{slope of the tangent line} to the graph of $y=f(x)$ at the point $P(a,f(a))$ is given by $m_T = f'(a)$.
+		\item The \emph{instantaneous rate of change} in the variable $y$ with respect to the variable $x$, where $y=f(x)$, at $x=a$ is given by $IRC = f'(a)$.
+	\end{enumerate}
+\subsection{Notations and Reading}
+	\begin{description}
+		\item[Lagrange or prime notation]
+			\[y' = f'(a)\]
+			Reading: ``y prime'' or ``f prime of (at) x''.
+		\item[Leibnitze notation]
+			\[\od{y}{x} = \od{}{x} f(x) = \Dif f(x) = \Dif_x f(x)\]
+			\[\od{y}{x}\]
+			Reading: ``dee y by dee x''.
+		\item[Evaluating]
+			\[\eval{f'(a) = \od{y}{x}}_{x=a}\]
+			Reading: ``dee y by dee x at x equals a''.
+	\end{description}
+\subsection{First Principles}
+	\emph{Differentiation} is the process to find the derivative function for a given function.
+
+	\emph{First Principles} is the process of differentiation by computing any of the following limits:
+	\[f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\]
+	\[f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x-h)}{2h}\]
+	\[f'(x) = \lim_{u \to x} \frac{f(u) - f(x)}{u-x}\]
+\subsection{Differentiability Point}
+	A function $y=f(x)$ is \emph{differentiable} at $x$ if $f'(x)$ exists.
+
+	If the function $y=f(x)$ is \emph{differentiable} at $x=a$ then the tangent line at $P(a,f(a))$ is \emph{unique} and \emph{not vertical} (the slope of the tangent line is not $\infty$ or $-\infty$).
+\subsection{Non-Differentiability}
+	A function is \emph{not differentiable} at $x=a$ if $f'(a)$ \emph{does not exist}.
+
+	\textbf{Notes:}
+	\begin{itemize}
+		\item If a function $f$ is \emph{not continuous} at $x=a$ then the function $f$ is \emph{not differentiable} at $x=a$.
+		\item If a function is differentiable at $x=a$ then the function is continuous at $x=a$.
+		\item If a function $f$ is \emph{continuous} at $x=a$ then the function $f$ \emph{may or may not be} differentiable at $x=a$.
+	\end{itemize}
+\subsection{Corner Point}
+	$P(a,f(a))$ is a \emph{corner point} if there are \emph{two} distinct tangent lines at $P$, one for the left-hand branch and one for the right-hand branch.
+\subsection{Infinite Slope Point}
+	$P(a,f(a))$ is an \emph{infinite slope point} if the tangent line at $P$ is vertical and the function is increasing or decreasing in the neighbourhood of the point $P$.
+	\[f'(a) = \infty \quad \lor \quad f'(a) = -\infty\]
+\subsection{Cusp Point}
+	$P(a,f(a))$ is a \emph{cusp point} if the tangent line at $P$ is vertical and the function is increasing on one side of the point $P$ and decreasing on the other side.
+	\[f'(a) = DNE\]
