@@ -1,23 +1,16 @@
-\section{Critical Points: Local Maxima and Minima}
-\setcounter{subsection}{1}
-\subsection{Local Maximum}
-	A function $f$ has a \emph{local (relative) maximum} at $x=c$ if:
-	\begin{itemize}
-		\item $f(x) \leq f(c)$ when $x$ is sufficiently close to $c$ (from both sides).
-		\item $f'(x)$ changes sign from positive to negative at $c$.
-	\end{itemize}
-\subsection{Local Minimum}
-	A function $f$ has a \emph{local (relative) minimum} at $x=c$ if::
-	\begin{itemize}
-		\item $f(x) \geq f(c)$ when $x$ is sufficiently close to $c$ (from both sides).
-		\item $f'(x)$ changes sign from negative to positive at $c$.
-	\end{itemize}
-\subsection{Critical Numbers and Critical Points}
-	The number $c \in D_f$ is a \emph{critical number} if:
-	\[f'(c) = 0 \quad \text{or} \quad f'(c)\ \mathrm{DNE}\]
-	The point $P(c,f(c))$ is called a \emph{critical point}.
-	\textbf{Notes:}
-	\begin{enumerate}
-		\item A local extremum happens always at a critical point (Fermat's theorem).
-		\item At a critical number a function may or may not have a local extremum.
-	\end{enumerate}
+\section{The Mean Value Theorem (AP)}
+\subsection{Rolle's Theorem}
+	Let $y=f(x)$ be a function continuous on $[a,b]$ and differentiable on $(a,b)$.
+
+	If $f(a) = f(b)$ then there is a number $c \in (a,b)$ such that $f'(c) = 0$.
+
+	\textbf{Note. Tangent line is horizontal at $P(c, f(c))$.}
+\subsection{Mean Value Theorem}
+	Let $y=f(x)$ be a function continuous on $[a,b]$ and differentiable on $(a,b)$.
+	Then there is a number $c \in (a,b)$ such that $f'(c) = \frac{f(b) - f(a)}{b-a}$.
+
+	\textbf{Note. Slope of tangent line at $P(c,f(c))$ is equal to slope of secant line.}
+\subsection{Theorem}
+	If $f'(x) = 0$ for all $x \in (a,b)$, then $f$ is constant on $(a,b)$.
+\subsection{Theorem}
+	If $f'(x) = g'(x)$ for all $x \in (a,b)$, then $f-g$ is constant on $(a,b)$ and $f(x) = g(x) + c$ where $c$ is a constant.
