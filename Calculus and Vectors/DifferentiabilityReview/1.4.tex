@@ -1,0 +1,65 @@
+\section{Limit of a Function}
+\subsection{One-Sided Limits}
+	The behaviour of the function $y=f(x)$ near $x=a$ is described by three numbers:
+	\begin{enumerate}
+		\item The left hand limit: \[L = \lim_{x \to a^-} f(x)\] the limit of the function $f(x)$ as $x$ approaches $a$ from the left.
+		\item The value of the function at $x=a$: \[f(a)\]
+		\item The right hand limit: \[R = \lim_{x \to a^+} f(x)\] the limit of the function $f(x)$ as $x$ approaches $a$ from the right.
+	\end{enumerate}
+	\textbf{Notes:}
+	\begin{enumerate}
+		\item In order to exist, both the left and right hand limits must be numbers.
+		\item If either the left or right hand limit is not a number, then the limit does not exist (DNE).
+		\item Infinite limits (like $\infty$ or $-\infty$) are not considered numbers but they are used to give information about the behaviour of a function near the number $x = a$.
+	\end{enumerate}
+\subsection{Limit}
+	The limit of a function $y=f(x)$ exists at $x=a$ if:
+	\begin{center}
+		$L$ and $R$ exist and $L = R$
+	\end{center}
+	In this case we write:
+	\[\lim_{x \to a} f(x)\]
+	the limit of the function $f(x)$ as $x$ approaches $a$.
+
+	\textbf{Note: The function may or may not be defined at $x = a$.}
+\subsection{Substitution}
+	If the function is defined by a formula (algebraic expression) then the limit of the function at a number $x = a$ may be determined by substitution:
+	\[\lim_{x \to a} f(x) = f(a)\]
+	\textbf{Notes:}
+	\begin{enumerate}
+		\item In order to use substitution, the function must be defined on both sides of the number $x=a$.
+		\item Substitution does not work if you get one of the following 7 indeterminate cases:
+		      \[\infty - \infty \qquad 0 \times \infty \qquad \frac{0}{0} \qquad \frac{\infty}{\infty} \qquad 1^{\infty} \qquad \infty^0 \qquad 0^0\]
+	\end{enumerate}
+\subsection{Piecewise defined functions (AP only)}
+	If the function changes the formula at $x=a$ then:
+	\begin{enumerate}
+		\item Use the appropriate formula to find the left-hand and right-hand limits.
+		\item Compare the left-hand and right-hand limits to conclude about the limit of the function at $x=a$.
+	\end{enumerate}
+	Example:
+	\begin{equation*}
+		f(x) =
+		\begin{cases}
+			f_1(x) \such x < a\\
+			f_2(x) \such x > a
+		\end{cases}
+	\end{equation*}
+	At $x=a$:
+	\[L = f_1(a) \qquad R = f_2(a)\]
+\subsection{Limits: Numerical Approach (AP only)}
+	The limit of a function $y=f(x)$ at a number $x=a$ may be estimated numerically.
+	To do that:
+	\begin{enumerate}
+		\item Use a sequence of numbers $x$ approaching $x=a$ from the left and from the right.
+		\item Find the value of the function at each number $x$.
+		\item Analyze the values and make a conclusion (guess the limit).
+		\item Be careful at the ``difference catastrophe''.
+	\end{enumerate}
+\subsection{Limit: Informal Definitions (AP only)}
+	\begin{description}
+		\item[Left-Hand Limit] If the values of $y=f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$ with $x<a$, then: \[\lim_{x \to a^-} f(x) = L\]
+		\item[Right-Hand Limit] If the values of $y=f(x)$ can be made arbitrarily close to $R$ by taking $x$ sufficiently close to $a$ with $x>a$, then: \[\lim_{x \to a^+} f(x) = R\]
+		\item[Limit] If the values of $y=f(x)$ can be made arbitrarily close to $l$ by taking $x$ sufficiently close to $a$ from both sides, then: \[\lim_{x \to a} f(x) = l\]
+		\item[Infinite Limit] If the values of $y=f(x)$ can be made arbitrarily large by taking $x$ sufficiently close to $a$ from both sides, then: \[\lim_{x \to a} f(x) = \infty\]
+	\end{description}
