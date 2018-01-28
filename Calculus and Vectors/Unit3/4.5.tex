@@ -1,0 +1,66 @@
+\section{An Algorithm for Curve Sketching}
+\subsection{Algorithm for Curve Sketching}
+	\begin{enumerate}
+		\item Domain
+			\begin{itemize}
+				\item $\text{denominator} \neq 0$
+				\item $\text{radicand} \geq 0$ (even roots)
+				\item $\text{logarithmic argument} > 0$ (logarithmic functions)
+			\end{itemize}
+		\item Intercepts
+			\begin{itemize}
+				\item $f(x) = 0$ ($x$-intercepts are real zeros)
+				\item $\text{numerator} = 0$
+				\item $y\text{-int} = f(0)$ (if exists)
+			\end{itemize}
+		\item Symmetry
+			\begin{itemize}
+				\item $f(-x) = f(x)$ (even functions are symmetric about the $y$-axis)
+				\item $f(-x) = -f(x)$ (odd functions are symmetric about the origin)
+				\item $f(x+T) = f(x)$ (periodic functions have cycles)
+			\end{itemize}
+		\item Asymptotes
+			\begin{itemize}
+				\item Compute $\displaystyle\lim_{x \to \pm\infty} f(x)$ (horizontal asymptote)
+				\item Compute $\displaystyle\lim_{x \to a} f(x)$ (vertical asymptote where $a$ is a zero of the denominator but not of the numerator).
+				\item $\log_b f(x)$ may generate vertical asymptotes when $\displaystyle \lim_{x \to a} f(x) = 0$
+				\item Compute long division (to find the oblique asymptotes for rational functions)
+			\end{itemize}
+		\item First Derivative
+			\begin{itemize}
+				\item Compute $f'(x)$
+				\item Find critical numbers ($f'(x) = 0$ or $f'(x)\ \mathrm{DNE}$)
+				\item Create the sign chart for $f'(x)$ (first derivative test)
+				\item Find intervals of increase/decrease
+				\item Find all extrema
+			\end{itemize}
+		\item Second Derivative
+			\begin{itemize}
+				\item Compute $f''(x)$
+				\item Find points where $f''(x) = 0$ or $f''(x)\ \mathrm{DNE}$
+				\item Create the sign chart for $f''(x)$
+				\item Find points of inflection
+				\item Find intervals of concavity upward/downward
+				\item Find local extrema by using the second derivative test (if necessary)
+			\end{itemize}
+		\item Curve Sketching
+			\begin{itemize}
+				\item Use broken lines to draw the asymptotes
+				\item Plot $x$ and $y$-intercepts, extrema, and inflection points
+				\item Draw the curve near the asymptotes
+				\item Sketch the curve
+			\end{itemize}
+	\end{enumerate}
+\subsection{Link between a Function and its Derivative}
+	If the function $y = f(x)$ is double differentiable then $f'(x)$ and $f''(x)$ exist.
+	The following statements show the link between $f$, $f'$, and $f''$:
+	\begin{enumerate}
+		\item $y=f(x)$ is increasing $\iff f'(x) > 0$
+		\item $y=f(x)$ is decreasing $\iff f'(x) < 0$
+		\item $y=f(x)$ has a local extrema at $x=a \implies$ tangent line at $P(a,f(a))$ is horizontal $\implies f'(a) = 0$
+		\item $y'=f'(x)$ is increasing $\iff f''(x) > 0 \iff y = f(x)$ is concave up
+		\item $y'=f'(x)$ is decreasing $\iff f''(x) < 0 \iff y=f(x)$ is concave down
+		\item $y'=f'(x)$ has a local extrema at $x=b \implies$ tangent line on the graph of $y'=f'(x)$ is horizontal $\implies f''(b) = 0$, $y=f(x)$ has an inflection point at $P(b,f(b))$.
+	\end{enumerate}
+\subsection{Symmetry and Derivatives Functions}
+	If the function $y=f(x)$ is even/odd then the derivative function $y'=f'(x)$ is odd/even.
