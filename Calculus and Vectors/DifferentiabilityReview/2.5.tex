@@ -1,0 +1,22 @@
+\section{Chain Rule}
+\subsection{Composition of Functions}
+	If $u=g(x)$ and $v=f(u)$ then:
+	\[x \xrightarrow[u=g(x)]{} u \xrightarrow[v=f(u)]{} v\]
+	and
+	\[v = f(u) = f(g(x)) = (f \circ g)(x)\]
+\subsection{Chain Rule (Leibniz Notation)}
+	\[\Delta x \xrightarrow[u=g(x)]{} \Delta u \xrightarrow[v=f(u)]{} \Delta v\]
+	and
+	\[\frac{\Delta v}{\Delta x} = \frac{\Delta v}{\Delta u} \frac{\Delta u}{\Delta x} \rightarrow \od{v}{x} = \od{v}{u} \od {u}{x}\]
+	Therefore:
+	\[\od{v}{x} = \od{v}{u} \od {u}{x}\]
+\subsection{Composition of Three Functions}
+	\[x \xrightarrow[u=h(x)]{} u \xrightarrow[v=g(u)]{} v \xrightarrow[w=f(v)]{} w\]
+	\[\od{w}{x} = \od{w}{v} \od{v}{u} \od{u}{x}\]
+\subsection{Chain Rule (Prime Notation)}
+	\[\left( f(g(x)) \right)' = f'(g(x))g'(x)\]
+	If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$ then the composition $(f \circ g)(x) = f(g(x))$ is differentiable at $x$ and:
+	\[(f \circ g)'(x) = \left( f(g(x)) \right)' = f'(g(x))g'(x)\]
+	So, the derivative of $f(g(x))$ is the derivative of the \emph{outside} function $f$ evaluated at the inside function $g(x)$ times the derivative of the inside function $g$ at $x$.
+
+	\textbf{Note: If the outside function is the power function, then the chain rule is equivalent to the generalized power rule \eqref{eq:2.3:generalizedPowerRule}.}
