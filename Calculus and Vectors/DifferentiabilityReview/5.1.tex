@@ -1,0 +1,25 @@
+\section{Derivative of Exponential Function}
+\subsection{Review of Exponential Functions}
+	The exponential function is defined as:
+	\[y = f(x) = b^x \such b > 0 \land b \neq 1\]
+	The $x$-axis ($y=0$) is a horizontal asymptote.
+\subsection{Number $e$}
+	The number $e$ is defined by:
+	\[e = \lim_{n \to \infty}\left( 1 + \frac{1}{n} \right)^n\]
+	which can be written also as:
+	\[e = \lim_{u \to 0}(1 + u)^{\frac{1}{u}}\]
+\subsection{Derivative of $e^x$}
+	\[\left( e^x \right)' = e^x\]
+	The proof of this is based on the fact that:
+	\[\lim_{h \to 0} \frac{e^h - 1}{h} = 1\]
+\subsection{Derivative of $e^{f(x)}$}
+	By using the chain rule:
+	\[\left( e^{f(x)} \right)' = e^{f(x)} f'(x)\]
+\subsection{Derivative of $b^x \such b > 0 \land b \neq 1$}
+	\[\left( b^x \right)' = (\ln b) b^x\]
+	\begin{proof}
+		\[\left( b^x \right)' = \left( e^{x \ln b} \right)' = e^{x \ln b}(\ln b) = (\ln b) b^x\]
+	\end{proof}
+\subsection{Derivative of $b^{f(x)}$}
+	By using the chain rule:
+	\[\left( b^{f(x)} \right)' = (\ln b)b^{f(x)} f'(x)\]

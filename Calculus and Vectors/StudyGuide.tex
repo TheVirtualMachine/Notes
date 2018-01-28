@@ -20,6 +20,7 @@
 \frenchspacing
 \newcommand{\sectionbreak}{\clearpage}
 \counterwithin*{section}{part}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 \renewcommand\thesubsection{\arabic{chapter}.\arabic{section}.\Alph{subsection}}
 \renewcommand\thepart{\arabic{part}}
 \renewcommand\partname{Unit}
@@ -53,7 +54,7 @@
 		\setcounter{section}{3}
 		\subimport*{DifferentiabilityReview/}{DifferentiabilityReview}
 	
-	\appendix
-	\chapter{Credit}
-	Thank you for everything, Mrs. Gugoiu.
+	%\appendix
+	%\chapter{Credit}
+	%Thank you for everything, Mrs. Gugoiu.
 \end{document}
