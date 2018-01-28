@@ -1,0 +1,40 @@
+\section{Derivative of Polynomial Functions}
+\subsection{Power Rule}
+	If $y=f(x)=x^n \such x,n \in \real$ is the \emph{power} function then:
+	\[y'=f'(x) = (x^n)' = nx^{n-1}\]
+	Some useful specific case:
+	\[(1)' = 0\]
+	\[(x)' = 1\]
+	\[\left(\sqrt{x}\right)' = \frac{1}{2\sqrt{x}}\]
+\subsection{Constant Function Rule}
+	If $y=f(x)=c \such c \in \real$ is the \emph{constant} function then:
+	\[f'(x) = (c)' = 0\]
+\subsection{Constant Multiple Rule}
+	If $g(x) = cf(x)$ then:
+	\[g'(x) = \left( cf(x) \right)' = c f'(x)\]
+	\[\od{}{x}g(x) = \od{}{x}(cf(x)) = c \od{}{x}f(x)\]
+\subsection{Sum and Difference Rules}
+	\[\left( f(x) \pm g(x) \right)' = f'(x) \pm g'(x)\]
+\subsection{Tangent Line}
+	The \emph{equation of the tangent line} at the point $P(a,f(a))$ to the curve $y=f(x)$ is:
+	\begin{equation}\label{eq:2.2:tangentLine}
+		y = f'(a)(x-a) + f(a)
+	\end{equation}
+\subsection{Normal Line (AP only)}
+	If $m_T = f'(a)$ is the slope of the tangent line at $P(a,f(a))$, the slope of the normal line $m_N$ is given by:
+	\[m_N = - \frac{1}{m_T}\]
+\subsection{Differentiability for Piecewise Defined Function (AP only)}
+	Consider the piecewise defined function:
+	\begin{equation*}
+		f(x)=
+		\begin{cases}
+			f_1(x) & x < a\\
+			c      & x = a\\
+			f_2(x) & x > a
+		\end{cases}
+	\end{equation*}
+	The function $f$ is \emph{differentiable} at $x=a$ if:
+	\begin{enumerate}
+		\item The function is continuous at $x=a$.
+		\item $f_1'(a) = f_2'(a)$ (the slope of the tangent line for the left branch is equal to the slope of the tangent line for the right branch).
+	\end{enumerate}
