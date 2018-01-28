@@ -1,0 +1,18 @@
+\section{Logarithmic Differentiation (AP)}
+\subsection{Logarithmic Differentiation}
+	If the function formula contains many factors, then logarithmic differentiation is a fast method to differentiate.
+
+	Use the following algorithm:
+	\begin{enumerate}
+		\item Take natural logarithms of both sides of $y=f(x)$.
+		\item Differentiate with respect to $x$.
+		\item Isolate $y' = \od{y}{x}$.
+	\end{enumerate}
+\subsection{Function Raise to a Function}
+	To differentiate a function $f(x)$ raised to another function $g(x)$, use the formula:
+	\[\left( f(x)^{g(x)} \right)' = g(x)f(x)^{g(x)-1} f'(x) + \ln(f(x))f(x)^{g(x)}g'(x)\]
+	\textbf{Notes:}
+	\begin{enumerate}
+		\item The first part $g(x)f(x)^{g(x)-1}$ comes from using the power rule and chain rule and by considering $g(x)$ constant.
+		\item The second part $\ln(f(x))f(x)^{g(x)}g'(x)$ comes from using the exponential rule and chain rule and by considering $f(x)$ constant.
+	\end{enumerate}
