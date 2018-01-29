@@ -1,0 +1,35 @@
+\tocsec{Differential Equations}
+\subsection{Differential Equations}
+	A \emph{differential equation} is an equation that contains an unknown function $y=f(x)$ and one or more of its derivatives ($y', y'', \dots$).
+
+	Most of the time, a differential equation is given by an \emph{implicit form}:
+	\[g(x,y,y',y'',\dots) = 0\]
+	The \emph{order} of a differential equation is the order of the highest derivative that occurs in the equation.
+\subsection{General Solution}
+	A function $y=f(x)$ is called a \emph{solution} of a differential equation if the equation is satisfied when $y=f(x)$ and its derivatives are substituted into the equation.
+
+	A \emph{family of solutions} satisfying a differential equation is called the \emph{general solution} of the differential equation.
+\subsection{Particular Solution}
+	Finding a \emph{particular solution} of the differential equation satisfies an \emph{initial condition} $y_0 = f(x_0)$ is called the \emph{initial-value} problem.
+\subsection{Direction Fields}
+	The first order differential equation:
+	\[\od{y}{x} = F(x,y)\]
+	shows that the slope of the \emph{solution curve} at the point $(x,y)$ is $F(x,y)$.
+
+	By drawing \emph{short line segments} with slope $F(x,y)$ at several points $(x,y)$, we get a \emph{direction (slope) field} which helps us to visualize the general shape of the solution curve $y=f(x)$ and to sketch a particular solution given an initial condition $y_0 = f(x_0)$.
+\subsection{Separable Differential Equations}
+	A \emph{separable differential equation} is defined by:
+	\[\od{y}{x} = \frac{g(x)}{h(y)}\]
+	This can be written as:
+	\[h(y) \dif y = g(x) \dif x\]
+	Therefore:
+	\[\int h(y) \dif y = \int g(x) \dif x\]
+	which permits (in some cases) to find explicitly the unknown function $y=f(x)$.
+\subsection{Exponential Growth and Decay}
+	If the instantaneous rate of change of the function $y=f(x)$ is proportional with the function itself:
+	\[y' = ky\]
+	Then:
+	\[\od{y}{x} = ky \implies \int \frac{\dif y}{y} = \int k \dif x \implies \ln\abs{y} = kx + C\]
+	The general solution may be written as:
+	\[y = \pm e^{kx + C} = Ae^{kx}\]
+	Where $C$ and $A$ are constants of integration.
