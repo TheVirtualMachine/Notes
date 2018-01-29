@@ -27,7 +27,7 @@
 \renewcommand{\theequation}{\roman{equation}}
 
 % More commands
-\newcommand{\tocsec}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}\setcounter{subsection}{0}}
+\newcommand{\tocsec}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}\pdfbookmark[1]{#1}{sec:#1}\setcounter{subsection}{0}}
 
 % Math notation.
 \newcommand{\such}{\mid}
@@ -68,6 +68,8 @@
 		\subimport*{Unit6/}{Unit6}
 	
 	\appendix
+	\part*{Appendix}
+		\addcontentsline{toc}{part}{Appendix}
 	\chapter{Equations}
 		\subimport*{Equations/}{Equations}
 	\chapter{Credit}

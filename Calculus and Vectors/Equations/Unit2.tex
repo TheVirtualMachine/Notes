@@ -1,0 +1,38 @@
+\section{Relationships between Points, Lines, and Planes}
+\paragraph{Distance from a point to a line in $\real^2$ (vector form)}
+	Where the point is $P_1 (x_1,y_1)$ and $P_0$ is on the line.
+	\begin{equation}
+		d = \frac{\abs{\vv{P_0P_1} \cdot \vv{n}}}{\norm{n}}
+	\end{equation}
+	\begin{equation}
+		d = \frac{\abs{Ax_1 + By_1 + C}}{\sqrt{A^2 + B^2}}
+	\end{equation}
+\paragraph{Distance from a point to a line in $\real^2$ (Cartesian form)}
+	Where the point is $P_1 (x_1,y_1)$ and $P_0$ is on the line.
+	\begin{equation}
+		d = \frac{\abs{Ax_1 + By_1 + C}}{\sqrt{A^2 + B^2}}
+	\end{equation}
+\paragraph{Distance from a point to a line in $\real^3$}
+	Where the point is $P_1 (x_1,y_1)$.
+	\begin{equation}
+		d = \frac{\norm{\vv{P_0P_1} \times \vv{u}}}{\norm{u}}
+	\end{equation}
+\paragraph{Perpendicular line from a point}
+	The vector equation of a line that goes through the point $F$ and is perpendicular to $L: \vv{r} = \vv{OP} + t\vv{u} \such t \in \real$ that intersects $L$ at $P$ is:
+	\begin{equation}
+		L_{\perp}: \vv{r} = \vv{OP} + s\vv{PF} \such s \in \real
+	\end{equation}
+\paragraph{Shortest distance between two skew lines}
+	\begin{equation}
+		d = \frac{\abs{(\vv{r_{01}} - \vv{r_{02}}) \cdot (\vv{u_1} \times \vv{u_2})}}{\norm{\vv{u_1} \times \vv{u_2}}}
+	\end{equation}
+\paragraph{Distance from a point to a plane (vector form)}
+	Where the point is $P_1 (x_1,y_1)$ and $P_0$ is on the plane.
+	\begin{equation}
+		d = \frac{\abs{\vv{P_0P_1} \cdot \vv{n}}}{\norm{n}}
+	\end{equation}
+\paragraph{Distance from a point to a plane (Cartesian form)}
+	Where the point is $P_1 (x_1,y_1)$ and $P_0$ is on the plane.
+	\begin{equation}
+		d = \frac{\abs{Ax_1 + By_1 + Cz_1 + D}}{\sqrt{A^2 + B^2 + C^2}}
+	\end{equation}
