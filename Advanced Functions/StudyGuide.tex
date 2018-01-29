@@ -11,7 +11,7 @@
 \usepackage{tasks}
 \usepackage{pgfplots}
 \usepackage{titlesec}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
 
 \frenchspacing
 
@@ -61,5 +61,7 @@
 	\part{Applications of Vectors}
 		\include{VectorApplications}
 	\appendix
+	\part*{Appendix}
+		\addcontentsline{toc}{part}{Appendix}
 		\include{Equations}
 \end{document}
