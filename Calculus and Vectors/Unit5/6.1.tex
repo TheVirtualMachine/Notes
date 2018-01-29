@@ -1,0 +1,36 @@
+\section{Applications of Integration}
+\subsection{Area Under a Curve}
+	The area under the curve $y=f(x)$ and the $x$-axis from $x=a$ to $x=b$ may be evaluated by:
+	\[A = \int_a^b f(x) \dif x\]
+	\textbf{Notes:}
+	\begin{itemize}
+		\item On the intervals where $f(x) \geq 0$ the area $A \geq 0$.
+		\item On the intervals where $f(x) \leq 0$ the area $A \leq 0$.
+		\item If $y=f(x)$ does not change its sign on $[a,b]$, then the formula above represents the net (or algebraic) area under the curve.
+	\end{itemize}
+\subsection{Total Positive Area}
+	The total positive area between $y=f(x)$ and the $x$-axis may be computed by:
+	\[A = \int_a^b \abs{f(x)} \dif x\]
+\subsection{Area between a Curve and the $y$-axis}
+	The area under the curve $x=f(y)$ and the $y$-axis from $y=a$ to $y=b$ may be evaluated by:
+	\[A = \int_a^b f(y) \dif y\]
+\subsection{Area between Two Curves}
+	Let $f(x) \geq g(x)$ on $[a,b]$. The area between these curves may be evaluated by:
+	\[A = \int_a^b \left( f(x) - g(x) \right) \dif x\]
+	If $f(x) - g(x)$ does not change sign on $[a,b]$, the use the following formula to evaluate the total area between these curves:
+	\[A = \int_a^b \abs{f(x) - g(x)} \dif x\]
+\subsection{Net Change}
+	If $f(x)$ represents the instantaneous rate of change of a function $F(x)$, then $f(x) = F'(x)$ and the \emph{net change} of the function $F(x)$ on the interval $[a,b]$ is given by the definite integral:
+	\[\int_a^b f(x) \dif x = F(b) - F(a)\]
+\subsection{Displacement}
+	If $v(t)$ represents the instantaneous velocity of a position function $s(t)$, then $v(t) = s'(t) = \od{s}{t}$ and the \emph{net change} of the position function $s(t)$ on the interval $[a,b]$ is called \emph{displacement} and is given by the definite integral:
+	\[\int_a^b v(t) \dif t = s(b) - s(a)\]
+\subsection{Distance Travelled}
+	Speed is defined by $speed = \abs{v(t)}$ and the total distance travelled is defined by:
+	\[\int_a^b \abs{v(t)} \dif t\]
+\subsection{Velocity Change}
+	If $a(t)$ represents the acceleration function of a velocity function $v(t)$, then $a(t) = v'(t) = \od{v}{t}$ and the \emph{net change} of the velocity function $v(t)$ on the interval $[a,b]$ is given by the definite integral:
+	\[\int_a^b a(t) \dif t = v(b) - v(a)\]
+\subsection{Cost}
+	If $C(x)$ is the cost of producing $x$ units, then the marginal cost is $C'(x)$ and the increase in cost when production is increase from $x=a$ units to $x=b$ units is given by the definite integral:
+	\[\int_a^b C'(x) \dif x = C(b) - C(a)\]
