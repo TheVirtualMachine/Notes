@@ -1,0 +1,35 @@
+\section{Integrals}
+\paragraph{List of known integrals}
+	\begin{align}
+		&\int x^n \dif x = \frac{x^{n+1}}{n+1} + C \such n \neq -1\\
+		&\int \frac{1}{x} \dif x = \ln \abs{x} + C\\
+		&\int e^x \dif x = e^x + C\\
+		&\int a^x \dif x = \frac{a^x}{\ln a} + C\\
+		&\int \dif x = x + C\\
+		&\int \sin(x) \dif x = -\cos(x) + C\\
+		&\int \cos(x) \dif x = \sin(x) + C\\
+		&\int \sec^2(x) \dif x = \tan(x) + C\\
+		&\int \csc^2(x) \dif x = -\cot(x) + C\\
+		&\int \sec(x) \tan(x) \dif x = \sec(x) + C\\
+		&\int \csc(x) \cot(x) \dif x = -\csc(x) + C\\
+		&\int \frac{1}{x^2 + 1} \dif x = \arctan(x) + C\\
+		&\int \frac{1}{\sqrt{1 - x^2}} \dif x = \arcsin(x) + C
+	\end{align}
+\paragraph{Finite Riemann sums}
+	The area under $f(x)$ over the intervals $[a,b]$ can be approximated with $n$ rectangles as:
+	\begin{equation}
+		A \approx \sum_{i=1}^n f(x_i^*) \Delta x \qquad \text{where } \Delta x = \frac{b-a}{n}
+	\end{equation}
+\paragraph{Infinite Riemann sums}
+	The area under $f(x)$ over the intervals $[a,b]$ can be calculated as:
+	\begin{equation}
+		A = \int_a^b f(x) \dif x = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x \qquad \text{where } \Delta x = \frac{b-a}{n}
+	\end{equation}
+\paragraph{Fundamental theorem of calculus (part 1)}
+	\begin{equation}
+		\int_a^b f(x) \dif x = F(b) - F(a) = \eval{F(x)}_a^b
+	\end{equation}
+\paragraph{Fundamental theorem of calculus (part 2)}
+	\begin{equation}
+		F(x) = \int_a^x f(t) \dif t
+	\end{equation}
