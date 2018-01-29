@@ -1,0 +1,92 @@
+\section{Equations of Lines and Planes}
+\paragraph{Vector equation of a line}
+	\begin{equation}
+		\vv{r}= \vv{r_0} + t \such t \in \real
+	\end{equation}
+\paragraph{Parametric equations of a line in $\real^2$}
+	\begin{equation}
+		L:
+		\begin{cases}
+			x = x_0 + tu_x\\
+			y = y_0 + tu_y
+		\end{cases}
+		t \in \real
+	\end{equation}
+\paragraph{Parallel lines}
+	\begin{equation}
+		\vv{u_1} \parallel \vv{u_2} \iff \vv{u_1} \times \vv{u_2} = \vv{0}
+	\end{equation}
+\paragraph{Perpendicular lines}
+	\begin{equation}
+		\vv{u_1} \perp \vv{u_2} \iff \vv{u_1} \perp \vv{u_2} = 0
+	\end{equation}
+\paragraph{Symmetric equation of a line in $\real^2$}
+	\begin{equation}
+		\frac{x-x_0}{u_x} = \frac{y-y_0}{u_y}
+	\end{equation}
+	The symmetric equation only exists if $u_x \neq 0$ and $u_y \neq 0$.
+\paragraph{Normal equation of a line in $\real^2$}
+	\begin{equation}
+		\left( \vv{r} - \vv{r_0} \right) \cdot \vv{n} = 0
+	\end{equation}
+\paragraph{Cartesian equation of a line in $\real^2$}
+	\begin{equation}
+		Ax + By + C = 0
+	\end{equation}
+	Where $\vv{n} = (A,B)$ is a normal vector, and $C$ depends on a specific point on the line.
+\paragraph{Slope $\boldsymbol{y}$-intercept equation}
+	\begin{equation}
+		y = mx + b
+	\end{equation}
+	where $m = \frac{u_y}{u_x}$.
+\paragraph{Angle between two lines}
+	\begin{equation}
+		\cos \theta = \frac{\vv{u_1} \cdot \vv{u_2}}{\norm{\vv{u_1}}\norm{\vv{u_2}}}
+	\end{equation}
+\paragraph{Parametric equations of a line in $\real^3$}
+	\begin{equation}
+		L:
+		\begin{cases}
+			x = x_0 + tu_x\\
+			y = y_0 + tu_y\\
+			z = z_0 + tu_z
+		\end{cases}
+		t \in \real
+	\end{equation}
+\paragraph{Symmetric equation of a line in $\real^3$}
+	\begin{equation}
+		\frac{x-x_0}{u_x} = \frac{y-y_0}{u_y} = \frac{z-z_0}{u_z}
+	\end{equation}
+	The symmetric equation only exists if $u_x \neq 0$, $u_y \neq 0$, and $u_z \neq 0$.
+\paragraph{Vector equation of a plane}
+	\begin{equation}
+		\pi : \vv{r} = \vv{r_0} + s\vv{u} + t\vv{v} \such s,t \in \real
+	\end{equation}
+\paragraph{Parametric equations of a plane}
+	\begin{equation}
+		\pi:
+		\begin{cases}
+			x = x_0 + su_x + tv_x\\
+			y = y_0 + su_y + tv_y\\
+			z = z_0 + su_z + tv_z
+		\end{cases}
+		s, t \in \real
+	\end{equation}
+\paragraph{Normal vector to a plane}
+	\begin{equation}
+		\vv{n} = \vv{u} \times \vv{v}
+	\end{equation}
+\paragraph{Normal equation of a plane}
+	\begin{equation}
+		\vv{P_0P} \cdot \vv{n} = 0
+	\end{equation}
+	Where $P_0$ and $P$ are points on the plane, and $\vv{n}$ is a vector perpendicular to the plane.
+\paragraph{Cartesian equation of a plane}
+	\begin{equation}
+		Ax + By + Cz + D = 0
+	\end{equation}
+	Where $\vv{n} = (A,B,C)$ is a normal vector to the plane.
+\paragraph{Angle between two planes}
+	\begin{equation}
+		\cos \theta = \frac{\vv{n_1} \cdot \vv{n_2}}{\norm{\vv{n_1} \norm{\vv{n_2}}}}
+	\end{equation}
