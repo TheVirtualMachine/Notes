@@ -1,0 +1,49 @@
+\section{The Definite Integral}
+\subsection{Riemann Sum}
+	Let $y=f(x)$ be a function defined on $[a,b]$.
+
+	The sequence:
+	\[x_0 = a< x_1 < x_2 < \dots < x_{n-1} M x_n = b\]
+	defines a \emph{partition} of the interval $[a,b]$ in $n$ subintervals of widths:
+	\[\Delta x_1 = x_1-x_0, \Delta x_2 = x_2 - x_1, \dots , \Delta x_n=x_n-x_{n-1}\]
+	Let $x_1^* \in [x_0,x_1], x_2^* \in [x_1,x_2], \dots , x_n^* \in [x_{n-1},x_n]$ be a sequence of any numbers in each interval.
+
+	The \emph{Riemann sum} is defined by:
+	\[f(x_1^*\Delta x_1 + f(x_2^*)\Delta x_2 + \dots + f(x_n^*)\Delta x_n = \sum_{i=1}^n f(x_i^*)\Delta x_i\]
+	\textbf{Note. The Riemann sum approximates the \emph{area} of the region bounded by the graph of $y=f(x)$, the $x$-axis, and the vertical lines $x=a$ and $x=b$.}
+\subsection{Definite Integral}
+	The function $y=f(x)$ is \emph{integrable} on $[a,b]$ if the following limit exists:
+	\[\lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x_i\]
+	This limit may be written symbolically:
+	\[\int_a^b f(x) \dif x\]
+	and is called the \emph{definite integral}.
+\subsection{Theorem}
+	If $y=f(x)$ is \emph{continuous} on $[a,b]$ (or $y=f(x)$ has only a finite number of jump discontinuities) then $y=f(x)$ is \emph{integrable} on $[a,b]$.
+
+	That means that the definite integral $\displaystyle\int_a^b f(x) \dif x$ exists.
+\subsection{Fundamental Theorem of Calculus (Part 1)}
+	If $F(x)$ is one antiderivative of $f(x)$ then:
+	\[\int_a^b f(x) \dif x = F(b) - F(a) = \eval[3]{F(x)}_a^b\]
+\subsection{Properties of Definite Integrals}
+	\[\int_a^a f(x) \dif x = 0\]
+	\[\int_a^b \dif x = b-a\]
+	\[\int_a^b f(x) \dif x = -\int_b^a f(x) \dif x\]
+	\[\int_a^b f(x) \dif x = \int_a^c f(x) \dif x + \int_c^b f(x) \dif x\]
+	\[\int_a^b c f(x) \dif x = c \int_a^b f(x) \dif x\]
+	\[\int_a^b \left( f(x) \pm g(x) \right) \dif x = \int_a^b f(x) \dif x \pm \int_a^b g(x) \dif x\]
+\subsection{More Properties of Definite Integrals}
+	If $f(x) \geq 0$ on $[a,b]$ then $\int_a^b f(x) \dif x \geq 0$.
+
+	If $f(x) \geq g(x)$ on $[a,b]$ then $\int_a^b f(x) \dif x \geq \int_a^b g(x) \dif x$.
+
+	If $m \leq f(x) \leq M$ on $[a,b]$ then:
+	\[m(a-b) \leq \int_a^b f(x) \dif x \leq M(a-b)\]
+\subsection{Fundamental Theorem of Calculus (Part 2)}
+	If $y=f(x)$ is continuous on $[a,b]$, then the function defined by:
+	\[F(x) = \int_a^x f(t) \dif t\]
+	is continuous on $[a,b]$ and differentiable on $(a,b)$, and:
+	\[F'(x) = f(x)\]
+	So:
+	\[\od{}{x} \int_a^x f(t) \dif t = f(x)\]
+	Note that:
+	\[\od{}{x} \int_a^{u(x)} f(t) \dif t = \left( \frac{\dif}{\dif u} \int_a^u f(t) \dif t \right) \od{u}{x} = f(u) \od{u}{x} = f(u(x))u'(x)\]
