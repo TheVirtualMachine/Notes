@@ -1,0 +1,38 @@
+\section{The Substitution Rule}
+\subsection{Substitution Rule for Indefinite Integrals}
+	If $u=g(x)$ is differentiable on the range of a continuous function $y=f(x)$ then $\dif u = g'(x) \dif x$ and
+	\[\int f(u(x))g'(x) \dif x = \int f(u) \dif u\]
+\subsection{Linear Substitution}
+	In this case:
+	\[u = g(x) = ax+b\]
+	\[\dif u = a \dif x\]
+	\[x = \frac{u-b}{a}\]
+\subsection{More about Linear Substitution}
+	Integrals of the forms:
+	\[\int P_n(x) \sqrt[m]{ax + b} \dif x\]
+	\[\int \frac{P_n(x)}{\sqrt[m]{ax + b}} \dif x\]
+	where $P_n(x)$ is a polynomial function of degree $n$ may be solved by the linear substitution:
+	\[u = ax + b\]
+\subsection{Substitution Rule and Power Rule}
+	If $u=g(x)$ then $\dif u = g'(x) \dif x$ and:
+	\[\int f^n(g(x))g'(x) \dif x = \int f^n(u) \dif u = \frac{f^{n+1}(u)}{n+1} + C = \frac{f^{n+1}(g(x))}{n+1} + C\]
+\subsection{Trigonometric Identities}
+	\[\sin^2 x + \cos^2 x = 1\]
+
+	\[\sin(2x) = 2\sin(x)\cos(x)\]
+
+	\[\cos(2x) = \cos^2(x) - \sin^2(x)\]
+	\[\cos(2x) = 2\cos^2(x) - 1\]
+	\[\cos(2x) = 1 - 2\sin^2(x)\]
+\subsection{Substitution Rule for Definite Integrals}
+	If $g'(x)$ is continuous on $[a,b]$ and $y=f(x)$ is continuous on the range of $u=g(x)$, then:
+	\[\dif u = g'(x) \dif x\]
+	and
+	\[\int_a^b f(g(x))g'(x) \dif x = \int_{g(a)}^{g(b)} f(u) \dif u\]
+\subsection{Symmetry}
+	Let $y=f(x)$ be a continuous function on $[a,b]$.
+
+	If $y=f(x)$ is even, then $f(-x)=f(x)$ and
+	\[\int_{-a}^a f(x) \dif x = 2\int_0^a f(x) \dif x\]
+	If $y=f(x)$ is odd, then $f(-x)=-f(x)$ and
+	\[\int_{-a}^a f(x) \dif x = 0\]
